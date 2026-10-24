@@ -1,0 +1,13 @@
+# Local credentials and editor / operating-system files
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.mobileprovision
+.DS_Store
+Thumbs.db

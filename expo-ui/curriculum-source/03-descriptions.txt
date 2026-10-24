@@ -1,0 +1,266 @@
+@色・形・大きさ|形容詞|This bag is {word}.|このかばんは{meaning}です。
+red|赤い
+blue|青い
+green|緑色の|This bag is green.|このかばんは緑色です。
+yellow|黄色い
+black|黒い
+white|白い
+brown|茶色の|This bag is brown.|このかばんは茶色です。
+pink|ピンク色の|This bag is pink.|このかばんはピンク色です。
+purple|紫色の|This bag is purple.|このかばんは紫色です。
+gray|灰色の|This bag is gray.|このかばんは灰色です。
+big|大きい
+small|小さい|This bag is small.|このかばんは小さいです。
+large|大きい|This room is large.|この部屋は広いです。
+little|小さい|I have a little bag.|私は小さなかばんを持っています。
+long|長い
+short|短い
+tall|背が高い|My brother is tall.|私の兄弟は背が高いです。
+high|高い|The mountain is high.|その山は高いです。
+low|低い|The table is low.|そのテーブルは低いです。
+wide|幅が広い
+narrow|幅が狭い
+thick|厚い
+thin|薄い
+heavy|重い
+round|丸い
+square|正方形の|This bag is square.|このかばんは正方形です。
+straight|まっすぐな|This road is straight.|この道路はまっすぐです。
+flat|平らな|The table is flat.|そのテーブルは平らです。
+deep|深い|The lake is deep.|その湖は深いです。
+shallow|浅い|The river is shallow.|その川は浅いです。
+@気持ち・性格|形容詞|I am {word}.|私は{meaning}です。
+happy|うれしい|I am happy.|私はうれしいです。
+sad|悲しい
+glad|喜んでいる|I am glad.|私は喜んでいます。
+angry|怒っている|I am angry.|私は怒っています。
+excited|わくわくしている|I am excited.|私はわくわくしています。
+surprised|驚いている|I am surprised.|私は驚いています。
+tired|疲れている|I am tired.|私は疲れています。
+sleepy|眠い
+hungry|空腹の|I am hungry.|私はおなかがすいています。
+thirsty|のどが渇いた|I am thirsty.|私はのどが渇いています。
+busy|忙しい
+free|暇な|I am free now.|私は今暇です。
+ready|準備ができた|I am ready.|私は準備ができています。
+afraid|恐れている|I am afraid of snakes.|私はヘビを恐れています。
+worried|心配している|I am worried.|私は心配しています。
+nervous|緊張している|I am nervous.|私は緊張しています。
+lonely|寂しい
+bored|退屈している|I am bored.|私は退屈しています。
+interested|興味を持っている|I am interested in art.|私は美術に興味を持っています。
+proud|誇りに思う|I am proud of my team.|私は自分のチームを誇りに思います。
+sorry|申し訳なく思う|I am sorry.|私は申し訳なく思います。
+sure|確信している|I am sure.|私は確信しています。
+careful|注意深い
+kind|親切な|She is kind.|彼女は親切です。
+nice|感じの良い|He is nice.|彼は感じが良いです。
+friendly|友好的な|She is friendly.|彼女は友好的です。
+gentle|穏やかな|He is gentle.|彼は穏やかです。
+polite|礼儀正しい
+honest|正直な|She is honest.|彼女は正直です。
+brave|勇敢な|He is brave.|彼は勇敢です。
+clever|賢い
+smart|頭の良い
+wise|思慮深い
+funny|おもしろい
+serious|真剣な|He is serious.|彼は真剣です。
+quiet|静かな|I am quiet.|私は静かにしています。
+noisy|騒がしい
+shy|恥ずかしがりの|I am shy.|私は恥ずかしがりです。
+lazy|怠けている|I am lazy today.|私は今日怠けています。
+active|活動的な|She is active.|彼女は活動的です。
+strong|強い
+weak|弱い
+healthy|健康な|I am healthy.|私は健康です。
+sick|病気の|I am sick.|私は病気です。
+well|元気な|I am well.|私は元気です。
+young|若い
+old|年を取った|He is old.|彼は年を取っています。
+rich|裕福な|She is rich.|彼女は裕福です。
+poor|貧しい
+popular|人気がある|He is popular.|彼は人気があります。
+famous|有名な|She is famous.|彼女は有名です。
+special|特別な|This day is special.|この日は特別です。
+different|異なる|Our ideas are different.|私たちの考えは異なります。
+same|同じ|We have the same bag.|私たちは同じかばんを持っています。
+alone|一人でいる|I am alone.|私は一人でいます。
+@性質・状態|形容詞|This book is {word}.|この本は{meaning}です。
+good|良い
+bad|悪い
+great|すばらしい
+wonderful|すてきな|This book is wonderful.|この本はすてきです。
+excellent|とても優れた|This book is excellent.|この本はとても優れています。
+perfect|完璧な|Your answer is perfect.|あなたの答えは完璧です。
+beautiful|美しい|The flower is beautiful.|その花は美しいです。
+pretty|かわいらしい
+cute|かわいい|The cat is cute.|その猫はかわいいです。
+interesting|興味深い
+boring|退屈な
+easy|簡単な|This book is easy.|この本は簡単です。
+difficult|難しい
+hard|硬い|This rock is hard.|この岩は硬いです。
+soft|柔らかい
+new|新しい
+fresh|新鮮な|This fruit is fresh.|この果物は新鮮です。
+clean|清潔な|This room is clean.|この部屋は清潔です。
+dirty|汚れた|This room is dirty.|この部屋は汚れています。
+hot|熱い|This soup is hot.|このスープは熱いです。
+warm|暖かい|The room is warm.|その部屋は暖かいです。
+cool|涼しい|The room is cool.|その部屋は涼しいです。
+dry|乾いた|This towel is dry.|このタオルは乾いています。
+wet|ぬれた|This towel is wet.|このタオルはぬれています。
+dark|暗い|This room is dark.|この部屋は暗いです。
+bright|明るい|This room is bright.|この部屋は明るいです。
+sunny|晴れた|It is sunny.|晴れています。
+cloudy|曇った|It is cloudy.|曇っています。
+rainy|雨の|It is a rainy day.|雨の日です。
+snowy|雪の|It is a snowy day.|雪の日です。
+windy|風が強い|It is windy.|風が強いです。
+safe|安全な|This place is safe.|この場所は安全です。
+dangerous|危険な|This road is dangerous.|この道路は危険です。
+important|重要な|This book is important.|この本は重要です。
+useful|役に立つ|This book is useful.|この本は役に立ちます。
+necessary|必要な|This tool is necessary.|この道具は必要です。
+possible|可能な|It is possible.|それは可能です。
+impossible|不可能な|It is impossible.|それは不可能です。
+right|正しい|Your answer is right.|あなたの答えは正しいです。
+wrong|間違った|Your answer is wrong.|あなたの答えは間違っています。
+true|本当の|This story is true.|この物語は本当です。
+false|事実でない|This story is false.|この物語は事実ではありません。
+real|本物の|This flower is real.|この花は本物です。
+full|いっぱいの|This box is full.|この箱はいっぱいです。
+empty|空の|This box is empty.|この箱は空です。
+open|開いている|The door is open.|ドアは開いています。
+closed|閉まっている|The door is closed.|ドアは閉まっています。
+cheap|安い
+expensive|高価な|This book is expensive.|この本は高価です。
+fast|速い|This train is fast.|この列車は速いです。
+slow|遅い|This train is slow.|この列車は遅いです。
+early|早い|We take an early train.|私たちは早い時間の列車に乗ります。
+late|遅刻した|I am late.|私は遅刻しています。
+sweet|甘い|This cake is sweet.|このケーキは甘いです。
+sour|酸っぱい|This lemon is sour.|このレモンは酸っぱいです。
+bitter|苦い|This tea is bitter.|このお茶は苦いです。
+salty|塩辛い|This soup is salty.|このスープは塩辛いです。
+spicy|香辛料の効いた|This curry is spicy.|このカレーは香辛料が効いています。
+delicious|おいしい|This cake is delicious.|このケーキはおいしいです。
+tasty|味の良い|This soup is tasty.|このスープは味が良いです。
+favorite|一番好きな|This is my favorite book.|これは私の一番好きな本です。
+international|国際的な|This is an international event.|これは国際的な催しです。
+foreign|外国の|I read a foreign book.|私は外国の本を読みます。
+local|地元の|This is a local shop.|これは地元の店です。
+public|公共の|This is a public park.|これは公共の公園です。
+private|私用の|This is a private room.|これは私用の部屋です。
+daily|毎日の|Walking is my daily exercise.|歩くことは私の毎日の運動です。
+natural|自然の|We need natural light.|私たちには自然の光が必要です。
+simple|単純な|The rule is simple.|その規則は単純です。
+common|よくある|This is a common mistake.|これはよくある間違いです。
+modern|現代の|This is a modern building.|これは現代の建物です。
+traditional|伝統的な|This is a traditional dance.|これは伝統的な踊りです。
+comfortable|快適な|This room is comfortable.|この部屋は快適です。
+convenient|便利な|This shop is convenient.|この店は便利です。
+@趣味・社会|名詞|I like {word}.|私は{meaning}が好きです。
+baseball|野球
+soccer|サッカー
+football|フットボール
+basketball|バスケットボール
+volleyball|バレーボール
+tennis|テニス
+badminton|バドミントン
+golf|ゴルフ
+swimming|水泳
+running|ランニング
+jogging|ジョギング
+cycling|サイクリング
+skating|スケート
+skiing|スキー
+hiking|ハイキング
+camping|キャンプ
+fishing|釣り
+game|ゲーム|This game is fun.|このゲームは楽しいです。
+race|競走|We watched a race.|私たちは競走を見ました。
+prize|賞|She won a prize.|彼女は賞を取りました。
+medal|メダル|He won a medal.|彼はメダルを取りました。
+goal|目標|This is my goal.|これは私の目標です。
+point|点|We need one point.|私たちは一点必要です。
+ball|ボール|Throw the ball.|ボールを投げてください。
+racket|ラケット|This is my racket.|これは私のラケットです。
+net|網|The ball hit the net.|ボールが網に当たりました。
+guitar|ギター|I play the guitar.|私はギターを弾きます。
+piano|ピアノ|I play the piano.|私はピアノを弾きます。
+violin|バイオリン|I play the violin.|私はバイオリンを弾きます。
+flute|フルート|I play the flute.|私はフルートを吹きます。
+drum|太鼓|I play the drum.|私は太鼓をたたきます。
+song|歌
+concert|演奏会|We went to a concert.|私たちは演奏会へ行きました。
+band|バンド|This band is popular.|このバンドは人気があります。
+movie|映画
+film|映画作品
+cartoon|漫画映画
+picture|絵|This picture is beautiful.|この絵は美しいです。
+photo|写真|This photo is old.|この写真は古いです。
+camera|カメラ|This is my camera.|これは私のカメラです。
+hobby|趣味|Cooking is my hobby.|料理は私の趣味です。
+collection|収集品|This is my collection.|これは私の収集品です。
+toy|おもちゃ|This toy is new.|このおもちゃは新しいです。
+doll|人形|This doll is cute.|この人形はかわいいです。
+puzzle|パズル
+comic|漫画の本|I read a comic.|私は漫画の本を読みます。
+magazine|雑誌|I read a magazine.|私は雑誌を読みます。
+newspaper|新聞|I read a newspaper.|私は新聞を読みます。
+news|ニュース|We watch the news.|私たちはニュースを見ます。
+program|番組|This program is interesting.|この番組はおもしろいです。
+television|テレビ|We watch television.|私たちはテレビを見ます。
+radio|ラジオ|I listen to the radio.|私はラジオを聞きます。
+computer|コンピューター|I use a computer.|私はコンピューターを使います。
+tablet|タブレット|This is my tablet.|これは私のタブレットです。
+phone|電話|I use my phone.|私は電話を使います。
+smartphone|スマートフォン|This is my smartphone.|これは私のスマートフォンです。
+screen|画面|Look at the screen.|画面を見てください。
+keyboard|キーボード|Use the keyboard.|キーボードを使ってください。
+printer|プリンター|This printer is new.|このプリンターは新しいです。
+internet|インターネット|We use the internet.|私たちはインターネットを使います。
+website|ウェブサイト|Visit our website.|私たちのウェブサイトを見てください。
+email|電子メール|I send an email.|私は電子メールを送ります。
+message|伝言|Read this message.|この伝言を読んでください。
+video|動画|We watch a video.|私たちは動画を見ます。
+app|アプリ|I use this app.|私はこのアプリを使います。
+information|情報|We need more information.|私たちにはもっと情報が必要です。
+technology|科学技術|Technology helps us.|科学技術は私たちを助けます。
+culture|文化|We learn about culture.|私たちは文化について学びます。
+custom|習慣|This custom is old.|この習慣は古いです。
+tradition|伝統|We keep this tradition.|私たちはこの伝統を守ります。
+peace|平和|We want peace.|私たちは平和を望みます。
+war|戦争|We must stop war.|私たちは戦争を止めなければなりません。
+life|生活|My life is happy.|私の生活は幸せです。
+dream|夢|I have a dream.|私は夢があります。
+hope|希望|We have hope.|私たちには希望があります。
+idea|考え|That is a good idea.|それは良い考えです。
+feeling|感情|Talk about your feeling.|あなたの感情について話してください。
+memory|思い出|This is a happy memory.|これは楽しい思い出です。
+luck|運|Good luck!|幸運を祈ります。
+chance|機会|This is your chance.|これはあなたの機会です。
+problem|問題|We have a problem.|私たちには問題があります。
+trouble|困り事|We are in trouble.|私たちは困り事を抱えています。
+reason|理由|Tell me the reason.|理由を教えてください。
+result|結果|Check the result.|結果を確認してください。
+fact|事実|This is a fact.|これは事実です。
+truth|真実|Tell me the truth.|真実を教えてください。
+money|お金|I need some money.|私はお金が少し必要です。
+coin|硬貨|I found a coin.|私は硬貨を見つけました。
+bill|請求書|Pay the bill.|請求書の代金を払ってください。
+price|値段|What is the price?|値段はいくらですか。
+cost|費用|Check the cost.|費用を確認してください。
+sale|特売|The sale starts today.|特売は今日始まります。
+gift|贈り物|This is a gift.|これは贈り物です。
+job|仕事|I like my job.|私は自分の仕事が好きです。
+work|作業|This work is easy.|この作業は簡単です。
+environment|環境|Protect the environment.|環境を守ってください。
+earthquake|地震|We felt an earthquake.|私たちは地震を感じました。
+community|地域社会|We help our community.|私たちは地域社会を助けます。
+society|社会|We live in a society.|私たちは社会の中で生きています。
+experience|経験|This experience is important.|この経験は大切です。
+skill|技能|Practice this skill.|この技能を練習してください。
+effort|努力|Your effort is important.|あなたの努力は大切です。
+success|成功|We hope for success.|私たちは成功を願っています。

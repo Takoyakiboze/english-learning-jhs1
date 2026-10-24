@@ -1,0 +1,301 @@
+@家・日用品|名詞|The {word} is clean.|その{meaning}はきれいです。
+house|家
+home|自宅|I am at home.|私は自宅にいます。
+room|部屋
+kitchen|台所
+bedroom|寝室
+bathroom|浴室
+toilet|トイレ
+hall|広間
+floor|床
+wall|壁
+roof|屋根
+door|ドア
+window|窓
+gate|門
+garden|庭
+yard|敷地内の庭
+garage|車庫
+stairs|階段|These stairs are steep.|この階段は急です。
+step|段|Watch your step.|足元の段に気を付けてください。
+elevator|エレベーター
+entrance|入り口
+exit|出口
+bed|ベッド
+sofa|ソファ
+shelf|棚
+mirror|鏡
+lamp|ランプ
+light|明かり|Turn on the light.|明かりをつけてください。
+blanket|毛布
+pillow|枕
+towel|タオル
+soap|せっけん|Wash with soap.|せっけんで洗ってください。
+shampoo|シャンプー|I need some shampoo.|私はシャンプーが少し必要です。
+toothbrush|歯ブラシ
+toothpaste|歯磨き粉|Use some toothpaste.|歯磨き粉を少し使ってください。
+brush|ブラシ
+shower|シャワー|I take a shower.|私はシャワーを浴びます。
+bath|入浴|I take a bath.|私は入浴します。
+sink|流し台
+refrigerator|冷蔵庫
+oven|オーブン
+stove|コンロ
+pan|フライパン
+pot|鍋
+basket|かご
+trash|ごみ|Put the trash here.|ごみをここに置いてください。
+garbage|生ごみ|Take out the garbage.|生ごみを外へ出してください。
+furniture|家具|We need new furniture.|私たちには新しい家具が必要です。
+machine|機械|This machine is useful.|この機械は役に立ちます。
+tool|道具|Use this tool.|この道具を使ってください。
+bell|ベル|Ring the bell.|ベルを鳴らしてください。
+candle|ろうそく|Light the candle.|ろうそくに火をつけてください。
+battery|電池|We need a battery.|私たちには電池が必要です。
+button|ボタン|Press the button.|ボタンを押してください。
+switch|スイッチ|Press this switch.|このスイッチを押してください。
+@体・健康|名詞|My {word} hurts.|私の{meaning}が痛みます。
+head|頭
+face|顔
+eye|目
+ear|耳
+nose|鼻
+mouth|口
+tooth|歯
+neck|首
+shoulder|肩
+arm|腕
+hand|手
+finger|指
+chest|胸
+back|背中
+stomach|おなか
+leg|脚
+knee|ひざ
+foot|足
+body|体|Move your body.|体を動かしてください。
+hair|髪|My hair is short.|私の髪は短いです。
+skin|皮膚|Keep your skin clean.|皮膚を清潔に保ってください。
+heart|心臓|The heart moves blood.|心臓は血液を動かします。
+blood|血液|Blood is red.|血液は赤いです。
+health|健康|Good health is important.|良い健康状態は大切です。
+medicine|薬|Take this medicine.|この薬を飲んでください。
+fever|熱|I have a fever.|私は熱があります。
+cold|風邪|I have a cold.|私は風邪をひいています。
+headache|頭痛|I have a headache.|私は頭痛がします。
+pain|痛み|I feel pain.|私は痛みを感じます。
+illness|病気|She has an illness.|彼女は病気を患っています。
+accident|事故|There was an accident.|事故がありました。
+injury|けが|He has an injury.|彼はけがをしています。
+bandage|包帯|Use a bandage.|包帯を使ってください。
+mask|マスク|Wear a mask.|マスクを着けてください。
+rest|休息|You need rest.|あなたには休息が必要です。
+sleep|睡眠|We need sleep.|私たちには睡眠が必要です。
+@服・身につける物|名詞|This is my {word}.|これは私の{meaning}です。
+shirt|シャツ
+coat|コート
+jacket|ジャケット
+sweater|セーター
+dress|ワンピース
+skirt|スカート
+cap|ふちのない帽子
+hat|つばのある帽子
+scarf|マフラー
+shoe|靴の片方
+belt|ベルト
+tie|ネクタイ
+pocket|ポケット
+ring|指輪
+helmet|ヘルメット
+clothes|衣服|These clothes are new.|この衣服は新しいです。
+jeans|ジーンズ|These jeans are blue.|このジーンズは青いです。
+shorts|半ズボン|These shorts are new.|この半ズボンは新しいです。
+pants|ズボン|These pants are black.|このズボンは黒いです。
+glasses|眼鏡|These glasses are mine.|この眼鏡は私のものです。
+sunglasses|サングラス|I wear sunglasses.|私はサングラスをかけます。
+@町・移動|名詞|We are near the {word}.|私たちはその{meaning}の近くにいます。
+town|町
+city|都市
+village|村
+country|国|This country is beautiful.|この国は美しいです。
+capital|首都
+street|通り
+road|道路
+bridge|橋
+corner|角
+traffic|交通|There is a lot of traffic.|交通量が多いです。
+signal|信号|Look at the signal.|信号を見てください。
+sign|標識|Read the sign.|標識を読んでください。
+station|駅
+stop|停留所|This is our stop.|ここは私たちが降りる停留所です。
+airport|空港
+bus|バス
+train|列車
+subway|地下鉄
+car|自動車
+taxi|タクシー
+bicycle|自転車
+bike|自転車|I ride my bike.|私は自転車に乗ります。
+truck|トラック
+boat|小舟
+ship|船
+plane|飛行機
+airplane|飛行機|I see an airplane.|私は飛行機が見えます。
+rocket|ロケット
+seat|座席|This seat is empty.|この座席は空いています。
+trip|小旅行|We take a trip.|私たちは小旅行に出かけます。
+travel|旅行|I enjoy travel.|私は旅行を楽しみます。
+journey|旅|The journey is long.|その旅は長いです。
+tour|見学旅行|We take a tour.|私たちは見学旅行に参加します。
+vacation|休暇|I enjoy my vacation.|私は休暇を楽しみます。
+holiday|休日|Today is a holiday.|今日は休日です。
+hotel|ホテル
+restaurant|レストラン
+cafe|カフェ
+shop|店
+store|商店
+supermarket|スーパーマーケット
+market|市場
+bakery|パン屋
+bookstore|書店
+bank|銀行
+hospital|病院
+museum|博物館
+theater|劇場
+cinema|映画館
+stadium|競技場
+park|公園
+zoo|動物園
+temple|寺
+church|教会
+castle|城
+tower|塔
+building|建物
+office|事務所
+factory|工場
+farm|農場
+field|畑
+beach|浜辺
+camp|キャンプ場
+tent|テント
+island|島
+area|地域
+place|場所|This place is quiet.|この場所は静かです。
+space|空間|We need more space.|私たちにはもっと空間が必要です。
+center|中心|Stand in the center.|中心に立ってください。
+front|前面|Wait at the front.|前面で待ってください。
+side|側面|Look at this side.|この側面を見てください。
+top|頂上|We reached the top.|私たちは頂上に着きました。
+bottom|底|Look at the bottom.|底を見てください。
+direction|方向|Which direction is north?|北はどの方向ですか。
+way|道筋|Show me the way.|道筋を教えてください。
+@自然・天気|名詞|Look at the {word}.|その{meaning}を見てください。
+sun|太陽
+moon|月
+star|星
+sky|空
+cloud|雲
+rain|雨|We need rain.|私たちには雨が必要です。
+snow|雪
+wind|風|The wind is strong.|風が強いです。
+storm|嵐|A storm is coming.|嵐が近づいています。
+thunder|雷|I hear thunder.|雷が聞こえます。
+rainbow|虹
+weather|天気|The weather is nice.|天気が良いです。
+season|季節|Spring is my favorite season.|春は私の好きな季節です。
+spring|春|Flowers bloom in spring.|春に花が咲きます。
+summer|夏|I swim in summer.|私は夏に泳ぎます。
+autumn|秋|Leaves fall in autumn.|秋に葉が落ちます。
+fall|秋（主に米語）|Leaves turn red in fall.|秋に葉が赤くなります。
+winter|冬|It snows in winter.|冬には雪が降ります。
+nature|自然|We love nature.|私たちは自然を愛しています。
+earth|地球|The earth is our home.|地球は私たちの住む場所です。
+world|世界|The world is large.|世界は広いです。
+land|陸地|We can see land.|私たちは陸地が見えます。
+sea|海
+ocean|大洋
+river|川
+lake|湖
+pond|池
+mountain|山
+hill|丘
+forest|森林
+wood|木材|This wood is hard.|この木材は硬いです。
+tree|木
+branch|枝
+leaf|葉
+flower|花
+grass|草
+plant|植物
+seed|種
+rose|バラ
+tulip|チューリップ
+sunflower|ヒマワリ
+rock|岩
+stone|石
+sand|砂
+ice|氷
+fire|火
+air|空気|We need clean air.|私たちにはきれいな空気が必要です。
+heat|熱さ|I feel the heat.|私は熱さを感じます。
+energy|エネルギー|We need energy.|私たちにはエネルギーが必要です。
+electricity|電気|We use electricity.|私たちは電気を使います。
+gas|ガス|We use gas.|私たちはガスを使います。
+metal|金属|This metal is heavy.|この金属は重いです。
+gold|金|Gold is a metal.|金は金属です。
+silver|銀|Silver is a metal.|銀は金属です。
+iron|鉄|Iron is a metal.|鉄は金属です。
+plastic|プラスチック|This cup is made of plastic.|このカップはプラスチックでできています。
+@時間・行事|名詞|I remember that {word}.|私はその{meaning}を覚えています。
+time|時|What time is it?|何時ですか。
+day|日
+week|週
+month|月（暦）|This month is busy.|今月は忙しいです。
+year|年
+hour|時間|Wait for an hour.|一時間待ってください。
+minute|分|Wait a minute.|一分待ってください。
+second|秒|Wait one second.|一秒待ってください。
+morning|朝|Good morning.|おはようございます。
+afternoon|午後
+evening|夕方
+night|夜
+noon|正午|We eat lunch at noon.|私たちは正午に昼食を食べます。
+midnight|真夜中|It is midnight.|真夜中です。
+weekend|週末
+birthday|誕生日
+date|日付|What is the date?|日付は何ですか。
+age|年齢|What is your age?|あなたの年齢はいくつですか。
+past|過去|We learn about the past.|私たちは過去について学びます。
+present|現在|Think about the present.|現在について考えてください。
+future|未来|Think about the future.|未来について考えてください。
+moment|瞬間
+event|催し
+festival|祭り
+party|パーティー
+ceremony|式典
+wedding|結婚式
+meeting|会議
+appointment|予約|I have an appointment today.|私は今日予約があります。
+schedule|予定表|Check your schedule.|予定表を確認してください。
+plan|計画|We have a plan.|私たちは計画があります。
+Christmas|クリスマス|We celebrate Christmas.|私たちはクリスマスを祝います。
+Halloween|ハロウィーン|We enjoy Halloween.|私たちはハロウィーンを楽しみます。
+January|一月|School starts in January.|学校は一月に始まります。
+February|二月|My birthday is in February.|私の誕生日は二月です。
+March|三月|We have a trip in March.|私たちは三月に小旅行をします。
+April|四月|School starts in April.|学校は四月に始まります。
+May|五月|We have a festival in May.|私たちは五月に祭りがあります。
+June|六月|It rains in June.|六月には雨が降ります。
+July|七月|We swim in July.|私たちは七月に泳ぎます。
+August|八月|It is hot in August.|八月は暑いです。
+September|九月|We meet in September.|私たちは九月に会います。
+October|十月|We have a trip in October.|私たちは十月に小旅行をします。
+November|十一月|It gets cold in November.|十一月には寒くなります。
+December|十二月|We meet in December.|私たちは十二月に会います。
+Monday|月曜日|I study on Monday.|私は月曜日に勉強します。
+Tuesday|火曜日|I swim on Tuesday.|私は火曜日に泳ぎます。
+Wednesday|水曜日|I run on Wednesday.|私は水曜日に走ります。
+Thursday|木曜日|I cook on Thursday.|私は木曜日に料理します。
+Friday|金曜日|I sing on Friday.|私は金曜日に歌います。
+Saturday|土曜日|I play tennis on Saturday.|私は土曜日にテニスをします。
+Sunday|日曜日|I rest on Sunday.|私は日曜日に休みます。

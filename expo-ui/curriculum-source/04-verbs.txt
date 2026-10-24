@@ -1,0 +1,389 @@
+@基本の動作|動詞|I can {word}.|私は{meaning}ことができます。
+be|～である|I want to be a teacher.|私は先生になりたいです。
+have|持っている|I have a pen.|私はペンを持っています。
+do|する|I do my homework.|私は宿題をします。
+go|行く|I go to school.|私は学校へ行きます。
+come|来る|Please come here.|ここに来てください。
+get|手に入れる|I get a new book.|私は新しい本を手に入れます。
+give|与える|I give him a pen.|私は彼にペンを与えます。
+take|取る|Please take this card.|このカードを取ってください。
+make|作る|I make a cake.|私はケーキを作ります。
+use|使う|I use a computer.|私はコンピューターを使います。
+want|欲しいと思う|I want a new bike.|私は新しい自転車が欲しいです。
+need|必要とする|I need water.|私は水を必要とします。
+like|好む|I like apples.|私はりんごが好きです。
+love|大好きである|I love music.|私は音楽が大好きです。
+enjoy|楽しむ|I enjoy this game.|私はこのゲームを楽しみます。
+know|知っている|I know that word.|私はその単語を知っています。
+think|考える|I think about my future.|私は自分の未来について考えます。
+believe|信じる|I believe you.|私はあなたを信じます。
+understand|理解する|I understand this question.|私はこの質問を理解しています。
+remember|覚えている|I remember your name.|私はあなたの名前を覚えています。
+forget|忘れる|I sometimes forget my key.|私は時々鍵を忘れます。
+learn|学ぶ|I learn English.|私は英語を学びます。
+study|勉強する|I study math.|私は数学を勉強します。
+teach|教える|I teach English.|私は英語を教えます。
+read|読む|I read a book.|私は本を読みます。
+write|書く|I write a letter.|私は手紙を書きます。
+speak|話す|I speak English.|私は英語を話します。
+talk|会話する|I talk with my friend.|私は友達と会話します。
+say|言う|I say hello.|私はこんにちはと言います。
+tell|伝える|Please tell me your name.|名前を教えてください。
+ask|尋ねる|I ask my teacher.|私は先生に尋ねます。
+reply|返事をする|Please reply soon.|すぐに返事をしてください。
+call|電話する|I call my mother.|私は母に電話します。
+hear|聞こえる|I hear a bird.|私には鳥の声が聞こえます。
+listen|耳を傾ける|I listen to music.|私は音楽に耳を傾けます。
+see|見える|I see a bird.|私には鳥が見えます。
+look|見る|Please look at this picture.|この絵を見てください。
+show|見せる|Please show me your book.|本を見せてください。
+find|見つける|I find my key.|私は鍵を見つけます。
+meet|会う|I meet my friend.|私は友達に会います。
+help|助ける|I help my mother.|私は母を助けます。
+thank|感謝する|I thank my teacher.|私は先生に感謝します。
+welcome|歓迎する|We welcome our guests.|私たちはお客さんを歓迎します。
+visit|訪問する|I visit my grandmother.|私は祖母を訪問します。
+live|住む|I live in this town.|私はこの町に住んでいます。
+stay|滞在する|I stay at this hotel.|私はこのホテルに滞在します。
+leave|出発する|I leave home at seven.|私は七時に家を出発します。
+arrive|到着する|I arrive at school early.|私は学校に早く到着します。
+return|戻る|I return home at five.|私は五時に家へ戻ります。
+walk|歩く|I walk to school.|私は学校へ歩きます。
+run|走る|I run every morning.|私は毎朝走ります。
+jump|跳ぶ
+swim|泳ぐ
+climb|登る|I climb a mountain.|私は山に登ります。
+ride|乗る|I ride a bike.|私は自転車に乗ります。
+drive|運転する|I drive a car.|私は自動車を運転します。
+skate|スケートをする
+ski|スキーをする
+dance|踊る
+sing|歌う
+play|遊ぶ|I play with my friends.|私は友達と遊びます。
+draw|描く|I draw a cat.|私は猫を描きます。
+paint|絵の具で描く|I paint a flower.|私は絵の具で花を描きます。
+build|建てる|We build a house.|私たちは家を建てます。
+create|生み出す|We create a new game.|私たちは新しいゲームを生み出します。
+grow|育てる|I grow flowers.|私は花を育てます。
+eat|食べる|I eat breakfast.|私は朝食を食べます。
+bake|焼く|I bake bread.|私はパンを焼きます。
+wash|洗う|I wash my hands.|私は手を洗います。
+cut|切る|I cut the paper.|私は紙を切ります。
+peel|皮をむく|I peel an apple.|私はりんごの皮をむきます。
+mix|混ぜる|I mix milk and eggs.|私は牛乳と卵を混ぜます。
+add|加える|I add some milk.|私は牛乳を少し加えます。
+boil|沸かす|I boil water.|私は水を沸かします。
+fry|油でいためる|I fry an egg.|私は卵を油でいためます。
+pour|注ぐ|I pour some tea.|私はお茶を少し注ぎます。
+serve|出す|We serve lunch at noon.|私たちは正午に昼食を出します。
+taste|味わう|Please taste this soup.|このスープを味わってください。
+smell|においをかぐ|I smell a flower.|私は花のにおいをかぎます。
+touch|触る|Do not touch the glass.|グラスに触らないでください。
+feel|感じる|I feel the wind.|私は風を感じます。
+hold|持つ|Please hold my bag.|私のかばんを持ってください。
+carry|運ぶ|I carry a box.|私は箱を運びます。
+bring|持ってくる|Please bring your book.|本を持ってきてください。
+put|置く|I put my bag here.|私はかばんをここに置きます。
+keep|保つ|We keep the room clean.|私たちは部屋を清潔に保ちます。
+move|動かす|I move the chair.|私は椅子を動かします。
+turn|曲がる|Please turn left.|左に曲がってください。
+push|押す|I push the door.|私はドアを押します。
+pull|引く|I pull the rope.|私はロープを引きます。
+pick|摘む|I pick a flower.|私は花を摘みます。
+drop|落とす|I sometimes drop my pen.|私は時々ペンを落とします。
+throw|投げる|I throw a ball.|私はボールを投げます。
+catch|受け止める|I catch the ball.|私はボールを受け止めます。
+hit|打つ|I hit the ball.|私はボールを打ちます。
+kick|蹴る|I kick the ball.|私はボールを蹴ります。
+sit|座る|Please sit here.|ここに座ってください。
+stand|立つ|Please stand here.|ここに立ってください。
+lie|横になる|I lie on the bed.|私はベッドに横になります。
+rise|昇る|The sun will rise soon.|太陽はもうすぐ昇ります。
+wake|目を覚ます|I wake up at six.|私は六時に目を覚まします。
+wear|身に着ける|I wear a hat.|私は帽子を身に着けます。
+change|変える|I change my plan.|私は計画を変えます。
+start|始める|I start my homework.|私は宿題を始めます。
+begin|始まる|Classes begin at nine.|授業は九時に始まります。
+finish|終える|I finish my homework.|私は宿題を終えます。
+end|終わる|Classes end at three.|授業は三時に終わります。
+continue|続ける|Please continue your story.|話を続けてください。
+wait|待つ|Please wait here.|ここで待ってください。
+try|試す|Please try this game.|このゲームを試してください。
+choose|選ぶ|I choose this book.|私はこの本を選びます。
+decide|決める|We decide where to go.|私たちは行く場所を決めます。
+wish|願う|I wish you good luck.|私はあなたの幸運を願います。
+promise|約束する|I promise to help you.|私はあなたを助けると約束します。
+agree|賛成する|I agree with you.|私はあなたに賛成します。
+disagree|反対する|I disagree with that idea.|私はその考えに反対します。
+explain|説明する|Please explain the rule.|規則を説明してください。
+describe|描写する|Please describe your room.|部屋の様子を描写してください。
+mean|意味する|What does this word mean?|この単語は何を意味しますか。
+spell|つづる|Please spell your name.|名前をつづってください。
+repeat|繰り返す|Please repeat this word.|この単語を繰り返してください。
+check|確認する|Please check your answer.|答えを確認してください。
+count|数える|I count the stars.|私は星を数えます。
+compare|比べる|We compare two pictures.|私たちは二枚の絵を比べます。
+measure|測る|I measure the table.|私はテーブルを測ります。
+follow|従う|Please follow this rule.|この規則に従ってください。
+lead|率いる|I lead the team.|私はチームを率います。
+join|加わる|I join the tennis club.|私はテニスクラブに加わります。
+invite|招く|I invite my friend.|私は友達を招きます。
+introduce|紹介する|I introduce my sister.|私は姉妹を紹介します。
+share|分け合う|We share the cake.|私たちはケーキを分け合います。
+collect|集める|I collect stamps.|私は切手を集めます。
+save|節約する|I save water.|私は水を節約します。
+spend|費やす|I spend time with my family.|私は家族と過ごすことに時間を費やします。
+buy|買う|I buy a book.|私は本を買います。
+sell|売る|They sell fruit.|彼らは果物を売ります。
+pay|支払う|I pay for my lunch.|私は昼食代を支払います。
+borrow|借りる|I borrow a book.|私は本を借ります。
+lend|貸す|I lend him a pen.|私は彼にペンを貸します。
+send|送る|I send a letter.|私は手紙を送ります。
+receive|受け取る|I receive a letter.|私は手紙を受け取ります。
+win|勝つ|We want to win the game.|私たちは試合に勝ちたいです。
+lose|失う|Do not lose your key.|鍵を失わないでください。
+beat|打ち負かす|We can beat that team.|私たちはそのチームを打ち負かすことができます。
+fight|戦う|They fight for peace.|彼らは平和のために戦います。
+break|壊す|Do not break the window.|窓を壊さないでください。
+fix|修理する|I fix my bike.|私は自転車を修理します。
+repair|修繕する|We repair the roof.|私たちは屋根を修繕します。
+close|閉める|Please close the door.|ドアを閉めてください。
+cover|覆う|Please cover the food.|食べ物を覆ってください。
+fill|満たす|I fill the cup with water.|私はカップを水で満たします。
+pack|荷造りする|I pack my bag.|私はかばんに荷造りします。
+wrap|包む|I wrap the gift.|私は贈り物を包みます。
+protect|守る|We protect nature.|私たちは自然を守ります。
+recycle|再利用する|We recycle paper.|私たちは紙を再利用します。
+smile|ほほえむ
+laugh|笑う
+cry|泣く
+shout|叫ぶ
+whisper|ささやく
+nod|うなずく
+wave|手を振る|I wave to my friend.|私は友達に手を振ります。
+bow|お辞儀する
+relax|くつろぐ
+imagine|想像する|I imagine my future.|私は自分の未来を想像します。
+notice|気づく|I notice a small bird.|私は小さな鳥に気づきます。
+appear|現れる|Stars appear at night.|星は夜に現れます。
+disappear|消える|Clouds disappear slowly.|雲はゆっくり消えます。
+happen|起こる|Accidents can happen.|事故は起こることがあります。
+become|～になる|I want to become a teacher.|私は先生になりたいです。
+seem|～のように見える|You seem happy.|あなたはうれしそうに見えます。
+belong|所属する|I belong to this club.|私はこのクラブに所属しています。
+include|含む|These meals include rice.|この食事には米が含まれます。
+improve|上達させる|I improve my English.|私は自分の英語を上達させます。
+prepare|準備する|I prepare dinner.|私は夕食を準備します。
+celebrate|祝う|We celebrate her birthday.|私たちは彼女の誕生日を祝います。
+cross|渡る|We cross the bridge.|私たちは橋を渡ります。
+reach|到着する|We reach the station at ten.|私たちは十時に駅に到着します。
+order|注文する|I order a sandwich.|私はサンドイッチを注文します。
+offer|申し出る|I offer to help.|私は手伝いを申し出ます。
+allow|許す|They allow us to enter.|彼らは私たちが入ることを許します。
+enter|入る|Please enter the room.|部屋に入ってください。
+@代名詞・疑問詞|代名詞|{word}|{meaning}
+I|私は|I am a student.|私は生徒です。
+you|あなたは|Can you swim?|あなたは泳げますか。
+he|彼は|Is he a teacher?|彼は先生ですか。
+she|彼女は|Can she sing?|彼女は歌えますか。
+it|それは|Is it your book?|それはあなたの本ですか。
+we|私たちは|Can we play here?|私たちはここで遊べますか。
+they|彼らは|Can they swim?|彼らは泳げますか。
+me|私を|Please help me.|私を助けてください。
+him|彼を|Please help him.|彼を助けてください。
+her|彼女を|Please help her.|彼女を助けてください。
+us|私たちを|Please help us.|私たちを助けてください。
+them|彼らを|Please help them.|彼らを助けてください。
+my|私の|This is my book.|これは私の本です。
+your|あなたの|Is this your book?|これはあなたの本ですか。
+his|彼の|This is his book.|これは彼の本です。
+its|それの|The cat eats its food.|猫は自分の餌を食べます。
+our|私たちの|This is our school.|これは私たちの学校です。
+their|彼らの|This is their house.|これは彼らの家です。
+mine|私のもの|This book is mine.|この本は私のものです。
+yours|あなたのもの|This book is yours.|この本はあなたのものです。
+hers|彼女のもの|This bag is hers.|このかばんは彼女のものです。
+ours|私たちのもの|This ball is ours.|このボールは私たちのものです。
+theirs|彼らのもの|This car is theirs.|この車は彼らのものです。
+myself|私自身|I made it myself.|私はそれを自分自身で作りました。
+yourself|あなた自身|Please introduce yourself.|あなた自身を紹介してください。
+this|これ|Is this a pen?|これはペンですか。
+that|あれ|Is that a bird?|あれは鳥ですか。
+these|これら|Are these your books?|これらはあなたの本ですか。
+those|あれら|Are those your shoes?|あれらはあなたの靴ですか。
+what|何|Do you know what this is?|あなたはこれが何か知っていますか。
+who|誰|Do you know who she is?|あなたは彼女が誰か知っていますか。
+whose|誰の|Do you know whose bag this is?|あなたはこれが誰のかばんか知っていますか。
+which|どちら|Tell me which you want.|あなたはどちらが欲しいか教えてください。
+where|どこ|Tell me where you live.|あなたはどこに住んでいるか教えてください。
+when|いつ|Tell me when to start.|いつ始めるか教えてください。
+why|なぜ|Tell me why you like it.|なぜそれが好きなのか教えてください。
+how|どのように|Tell me how to cook rice.|米をどのように炊くか教えてください。
+everyone|みんな|Is everyone ready?|みんな準備はできていますか。
+someone|誰か|I can hear someone.|私には誰かの声が聞こえます。
+anyone|誰でも|Can anyone help me?|誰か私を助けられますか。
+something|何か|I want something cold.|私は何か冷たいものが欲しいです。
+anything|何か（疑問・否定）|Do you need anything?|あなたは何か必要ですか。
+everything|すべてのもの|I like everything here.|私はここにあるすべてのものが好きです。
+nothing|何も～ない|There is nothing in the box.|箱には何もありません。
+@前置詞・接続詞|前置詞・接続詞|{word}|{meaning}
+in|～の中に|My pen is in the box.|私のペンは箱の中にあります。
+on|～の上に|My book is on the desk.|私の本は机の上にあります。
+at|～で|I am at school.|私は学校にいます。
+by|～のそばに|I stand by the door.|私はドアのそばに立っています。
+near|～の近くに|I live near the park.|私は公園の近くに住んでいます。
+under|～の下に|The cat is under the table.|猫はテーブルの下にいます。
+over|～を越えて|The bird flies over the tree.|鳥は木を越えて飛びます。
+above|～より上に|The lamp is above the table.|ランプはテーブルより上にあります。
+below|～より下に|The village is below the hill.|村は丘より下にあります。
+behind|～の後ろに|The dog is behind the door.|犬はドアの後ろにいます。
+between|～の間に（両者）|The cat is between two boxes.|猫は二つの箱の間にいます。
+among|～の中に（集団）|I found it among the books.|私はそれを本の集団の中に見つけました。
+beside|～の隣に|Please sit beside me.|私の隣に座ってください。
+inside|～の内側に|The key is inside the box.|鍵は箱の内側にあります。
+outside|～の外側に|Wait outside the room.|部屋の外側で待ってください。
+to|～へ|I go to school.|私は学校へ行きます。
+from|～から|This letter is from my aunt.|この手紙は私のおばからです。
+into|～の中へ|Put it into the bag.|それをかばんの中へ入れてください。
+across|～を横切って|We walk across the street.|私たちは通りを横切って歩きます。
+through|～を通り抜けて|We walk through the park.|私たちは公園を通り抜けて歩きます。
+along|～に沿って|We walk along the river.|私たちは川に沿って歩きます。
+around|～の周りに|We sit around the table.|私たちはテーブルの周りに座ります。
+up|～の上へ|We walk up the hill.|私たちは丘の上へ歩きます。
+down|～の下へ|We walk down the hill.|私たちは丘の下へ歩きます。
+with|～と一緒に|I play with my sister.|私は姉妹と一緒に遊びます。
+without|～なしで|I drink tea without sugar.|私は砂糖なしでお茶を飲みます。
+for|～のために|This gift is for you.|この贈り物はあなたのためのものです。
+of|～の|This is a picture of a cat.|これは猫の絵です。
+about|～について|We talk about music.|私たちは音楽について話します。
+before|～の前に|Wash your hands before lunch.|昼食の前に手を洗ってください。
+after|～の後に|I play tennis after school.|私は放課後にテニスをします。
+during|～の間ずっと|Do not talk during the test.|試験の間は話さないでください。
+until|～まで|I study until five.|私は五時まで勉強します。
+since|～以来|I have lived here since April.|私は四月以来ここに住んでいます。
+and|そして|I like cats and dogs.|私は猫と犬が好きです。
+but|しかし|I am tired but happy.|私は疲れていますがうれしいです。
+or|または|Do you want tea or milk?|お茶または牛乳が欲しいですか。
+because|なぜなら|I run because it is fun.|私は走ります。なぜなら楽しいからです。
+so|それで|It is hot, so I drink water.|暑いです。それで私は水を飲みます。
+if|もし～なら|I will go if it is sunny.|もし晴れなら私は行きます。
+while|～している間|I sing while I cook.|私は料理をしている間に歌います。
+than|～よりも|He is taller than me.|彼は私よりも背が高いです。
+as|～として|She works as a teacher.|彼女は先生として働いています。
+@数・基本語|数詞・副詞など|{word}|{meaning}
+one|一|I have one pen.|私はペンを一本持っています。
+two|二|I have two books.|私は本を二冊持っています。
+three|三|I have three apples.|私はりんごを三個持っています。
+four|四|I have four pencils.|私は鉛筆を四本持っています。
+five|五|I have five coins.|私は硬貨を五枚持っています。
+six|六|I have six eggs.|私は卵を六個持っています。
+seven|七|I have seven cards.|私はカードを七枚持っています。
+eight|八|I have eight stamps.|私は切手を八枚持っています。
+nine|九|I have nine pens.|私はペンを九本持っています。
+ten|十|I have ten books.|私は本を十冊持っています。
+eleven|十一|I have eleven cards.|私はカードを十一枚持っています。
+twelve|十二|I have twelve eggs.|私は卵を十二個持っています。
+thirteen|十三|I am thirteen years old.|私は十三歳です。
+fourteen|十四|She is fourteen years old.|彼女は十四歳です。
+fifteen|十五|He is fifteen years old.|彼は十五歳です。
+sixteen|十六|We need sixteen chairs.|私たちには椅子が十六脚必要です。
+seventeen|十七|We have seventeen books.|私たちは本を十七冊持っています。
+eighteen|十八|I have eighteen cards.|私はカードを十八枚持っています。
+nineteen|十九|We have nineteen students.|私たちのところには生徒が十九人います。
+twenty|二十|I have twenty coins.|私は硬貨を二十枚持っています。
+thirty|三十|We need thirty chairs.|私たちには椅子が三十脚必要です。
+forty|四十|We have forty books.|私たちは本を四十冊持っています。
+fifty|五十|We have fifty cards.|私たちはカードを五十枚持っています。
+hundred|百|We have a hundred books.|私たちは本を百冊持っています。
+thousand|千|This book costs a thousand yen.|この本は千円です。
+first|一番目の|Read the first page.|一番目のページを読んでください。
+third|三番目の|Read the third page.|三番目のページを読んでください。
+last|最後の|Read the last page.|最後のページを読んでください。
+next|次の|Read the next page.|次のページを読んでください。
+a|一つの|I have a pen.|私はペンを一本持っています。
+an|一つの（母音の前）|I have an apple.|私はりんごを一個持っています。
+the|その|Please close the door.|そのドアを閉めてください。
+some|いくらかの|I need some water.|私は水がいくらか必要です。
+any|いくらかの（疑問・否定）|Do you have any water?|あなたは水をいくらか持っていますか。
+many|たくさんの（数）|I have many books.|私は本をたくさん持っています。
+much|たくさんの（量）|We do not have much time.|私たちには時間があまりありません。
+all|すべての|I know all the students.|私はすべての生徒を知っています。
+both|両方の|I like both books.|私は両方の本が好きです。
+each|それぞれの|Read each word.|それぞれの単語を読んでください。
+every|どの～も|I run every day.|私は毎日走ります。
+other|ほかの|Please use the other door.|ほかのドアを使ってください。
+another|もう一つの|I want another apple.|私はもう一つりんごが欲しいです。
+more|より多くの|I need more water.|私はもっと多くの水が必要です。
+most|最も多くの|This box has the most books.|この箱には最も多くの本があります。
+few|少数の|I have a few friends.|私は少数の友達がいます。
+less|より少ない|This needs less water.|これにはより少ない水が必要です。
+enough|十分な|We have enough time.|私たちには十分な時間があります。
+can|～できる|I can swim.|私は泳げます。
+will|～するつもり|I will go tomorrow.|私は明日行くつもりです。
+may|～してもよい|You may sit here.|あなたはここに座ってもよいです。
+must|～しなければならない|You must stop here.|あなたはここで止まらなければなりません。
+should|～すべき|You should study now.|あなたは今勉強すべきです。
+would|～でしょう（丁寧）|I would like some tea.|私はお茶を頂きたいです。
+could|～できた|I could swim at six.|私は六歳のときに泳げました。
+shall|～しましょうか|What shall we do?|私たちは何をしましょうか。
+not|～でない|I am not tired.|私は疲れていません。
+yes|はい|I say yes.|私ははいと言います。
+no|いいえ|I say no.|私はいいえと言います。
+please|どうぞ|Come in, please.|どうぞ入ってください。
+hello|こんにちは|I say hello.|私はこんにちはと言います。
+goodbye|さようなら|I say goodbye.|私はさようならと言います。
+today|今日|I study today.|私は今日勉強します。
+tomorrow|明日|I will go tomorrow.|私は明日行きます。
+yesterday|昨日|I was busy yesterday.|私は昨日忙しかったです。
+now|今|I am busy now.|私は今忙しいです。
+then|その時|I was a child then.|私はその時子供でした。
+soon|すぐに|See you soon.|すぐにまた会いましょう。
+later|後で|I will call you later.|私は後であなたに電話します。
+already|すでに|I already know that.|私はすでにそれを知っています。
+still|まだ|I still have time.|私にはまだ時間があります。
+yet|まだ（否定）|I am not ready yet.|私はまだ準備ができていません。
+always|いつも|I always eat breakfast.|私はいつも朝食を食べます。
+usually|たいてい|I usually walk to school.|私はたいてい学校へ歩きます。
+often|しばしば|I often read books.|私はしばしば本を読みます。
+sometimes|時々|I sometimes play tennis.|私は時々テニスをします。
+never|決して～ない|I never swim here.|私はここで決して泳ぎません。
+again|再び|Please say it again.|それを再び言ってください。
+once|一度|I went there once.|私はそこに一度行きました。
+twice|二度|I went there twice.|私はそこに二度行きました。
+here|ここに|Please sit here.|ここに座ってください。
+there|そこに|Please stand there.|そこに立ってください。
+away|離れて|Please stay away from the fire.|火から離れていてください。
+together|一緒に|We study together.|私たちは一緒に勉強します。
+also|～もまた|I also like music.|私は音楽もまた好きです。
+too|～も|I like music too.|私も音楽が好きです。
+very|とても|This book is very good.|この本はとても良いです。
+really|本当に|I really like this book.|私は本当にこの本が好きです。
+quite|かなり|This book is quite good.|この本はかなり良いです。
+almost|ほとんど|It is almost noon.|ほとんど正午です。
+only|～だけ|I have only one pen.|私はペンを一本だけ持っています。
+just|ちょうど|It is just ten o'clock.|ちょうど十時です。
+even|～でさえ|Even a child can do it.|子供でさえそれができます。
+maybe|たぶん|Maybe it will rain.|たぶん雨が降るでしょう。
+slowly|ゆっくりと|Please speak slowly.|ゆっくりと話してください。
+quickly|素早く|Please come quickly.|素早く来てください。
+carefully|注意深く|Please read carefully.|注意深く読んでください。
+easily|簡単に|I can do it easily.|私はそれを簡単にできます。
+far|遠くに|My school is far from here.|私の学校はここから遠いです。
+nearby|近くに|My friend lives nearby.|私の友達は近くに住んでいます。
+ever|今までに|Have you ever seen a whale?|あなたは今までにクジラを見たことがありますか。
+else|ほかに|What else do you need?|あなたはほかに何が必要ですか。
+off|離れて（接触をやめて）|Take off your shoes.|靴を脱いでください。
+zero|ゼロ|The score is zero.|得点はゼロです。
+sixty|六十|There are sixty minutes in an hour.|一時間は六十分です。
+seventy|七十|There are seventy books.|本が七十冊あります。
+eighty|八十|There are eighty cards.|カードが八十枚あります。
+ninety|九十|There are ninety students.|生徒が九十人います。
+left|左|Please turn left.|左に曲がってください。
+@町・移動|名詞|{word}|{meaning}
+north|北|Our school is to the north.|私たちの学校は北にあります。
+south|南|Our school is to the south.|私たちの学校は南にあります。
+east|東|The sun rises in the east.|太陽は東から昇ります。
+west|西|The sun sets in the west.|太陽は西に沈みます。
+@色・形・大きさ|名詞|{word}|{meaning}
+color|色|What color is your bag?|あなたのかばんは何色ですか。
+size|大きさ|What size is this box?|この箱の大きさはどのくらいですか。

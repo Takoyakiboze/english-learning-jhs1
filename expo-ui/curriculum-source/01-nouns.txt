@@ -1,0 +1,268 @@
+# @category|part of speech|English example pattern|Japanese example pattern
+# A row can override the pattern: word|meaning|example|translation
+@家族・人|名詞|My {word} is kind.|私の{meaning}は親切です。
+mother|母
+father|父
+parent|親
+brother|兄弟
+sister|姉妹
+grandfather|祖父
+grandmother|祖母
+uncle|おじ
+aunt|おば
+cousin|いとこ
+son|息子
+daughter|娘
+husband|夫
+wife|妻
+friend|友達|You are my friend.|あなたは私の友達です。
+neighbor|近所の人
+classmate|クラスメート
+teammate|チームメート
+partner|相手
+grandparent|祖父母の一人
+@人・仕事|名詞|She is {article} {word}.|彼女は{meaning}です。
+teacher|先生
+student|生徒
+doctor|医師
+nurse|看護師
+dentist|歯科医
+farmer|農家の人
+worker|働く人
+driver|運転手
+pilot|操縦士
+cook|料理人
+artist|芸術家
+singer|歌手
+dancer|ダンサー
+actor|俳優
+writer|作家
+player|選手
+athlete|運動選手
+musician|音楽家
+police|警察|Call the police.|警察を呼んでください。
+firefighter|消防士
+coach|コーチ
+guide|案内人
+volunteer|ボランティア
+leader|指導者
+president|社長
+member|会員
+guest|客
+customer|顧客
+fan|ファン
+hero|英雄
+king|王|The king lives here.|その王はここに住んでいます。
+queen|女王
+person|人|One person is waiting.|一人の人が待っています。
+people|人々|Many people live here.|多くの人々がここに住んでいます。
+man|男性|The man is my uncle.|その男性は私のおじです。
+woman|女性
+boy|男の子|The boy is reading.|その男の子は読書をしています。
+girl|女の子
+child|子供|The child is smiling.|その子供はほほえんでいます。
+baby|赤ちゃん|The baby is sleeping.|その赤ちゃんは眠っています。
+family|家族|This is my family.|これは私の家族です。
+team|チーム|Our team is strong.|私たちのチームは強いです。
+group|集団|This group is small.|この集団は小さいです。
+crowd|群衆|A crowd is waiting.|群衆が待っています。
+@動物|名詞|I can see {article} {word}.|私は{meaning}を見ることができます。
+animal|動物
+dog|犬
+cat|猫
+bird|鳥
+fish|魚
+horse|馬
+cow|牛
+pig|豚
+sheep|羊
+goat|ヤギ
+chicken|鶏
+duck|アヒル
+rabbit|ウサギ
+mouse|ネズミ
+hamster|ハムスター
+bear|クマ
+lion|ライオン
+tiger|トラ
+elephant|ゾウ
+giraffe|キリン
+zebra|シマウマ
+monkey|サル
+panda|パンダ
+whale|クジラ
+dolphin|イルカ
+shark|サメ
+penguin|ペンギン
+frog|カエル
+turtle|カメ
+snake|ヘビ
+insect|昆虫
+butterfly|チョウ
+bee|ハチ
+ant|アリ
+fly|ハエ
+mosquito|蚊
+spider|クモ
+crab|カニ
+pet|ペット
+@食べ物|名詞|I eat {article} {word}.|私は{meaning}を食べます。
+apple|りんご|I eat an apple.|私はりんごを食べます。
+orange|オレンジ
+banana|バナナ
+lemon|レモン
+peach|桃
+pear|梨
+grape|ブドウ|This grape is sweet.|このブドウは甘いです。
+strawberry|イチゴ
+cherry|サクランボ
+pineapple|パイナップル
+melon|メロン
+watermelon|スイカ
+tomato|トマト
+potato|ジャガイモ
+carrot|ニンジン
+onion|タマネギ
+egg|卵
+sandwich|サンドイッチ
+hamburger|ハンバーガー
+sausage|ソーセージ
+cookie|クッキー
+biscuit|ビスケット
+pancake|パンケーキ
+@食事・飲み物|名詞|I like {word}.|私は{meaning}が好きです。
+food|食べ物
+fruit|果物
+vegetable|野菜|This vegetable is fresh.|この野菜は新鮮です。
+bread|パン
+rice|米
+meat|肉
+beef|牛肉
+pork|豚肉
+ham|ハム
+cheese|チーズ
+butter|バター
+milk|牛乳
+water|水|I drink water.|私は水を飲みます。
+juice|ジュース
+tea|お茶
+coffee|コーヒー
+soup|スープ
+salad|サラダ
+pasta|パスタ
+spaghetti|スパゲティ
+pizza|ピザ
+curry|カレー
+noodle|麺|This noodle is long.|この麺は長いです。
+seafood|魚介類
+lettuce|レタス
+cabbage|キャベツ
+corn|トウモロコシ
+bean|豆|This bean is small.|この豆は小さいです。
+cake|ケーキ
+chocolate|チョコレート
+candy|キャンディー
+honey|はちみつ
+jam|ジャム
+sugar|砂糖|Add some sugar.|砂糖を少し加えてください。
+salt|塩|Pass the salt, please.|塩を取ってください。
+oil|油|Put oil in the pan.|フライパンに油を入れてください。
+cream|クリーム
+breakfast|朝食
+lunch|昼食
+dinner|夕食
+meal|食事|This meal is good.|この食事はおいしいです。
+dessert|デザート
+snack|軽食|I have a snack.|私は軽食を取ります。
+drink|飲み物|This drink is cold.|この飲み物は冷たいです。
+bottle|瓶|This bottle is empty.|この瓶は空です。
+cup|カップ|This is my cup.|これは私のカップです。
+glass|グラス|This glass is clean.|このグラスはきれいです。
+plate|皿|Wash the plate.|皿を洗ってください。
+bowl|ボウル|This bowl is big.|このボウルは大きいです。
+spoon|スプーン|Use a spoon.|スプーンを使ってください。
+fork|フォーク|Use a fork.|フォークを使ってください。
+knife|ナイフ|This knife is sharp.|このナイフは鋭いです。
+menu|メニュー|Read the menu.|メニューを読んでください。
+@学校・持ち物|名詞|This is my {word}.|これは私の{meaning}です。
+school|学校|I go to school.|私は学校へ行きます。
+classroom|教室
+class|クラス
+desk|机
+chair|椅子
+table|テーブル
+book|本|This is my book.|これは私の本です。
+notebook|ノート
+textbook|教科書
+dictionary|辞書
+pen|ペン
+pencil|鉛筆
+eraser|消しゴム
+ruler|定規
+chalk|チョーク|Write with chalk.|チョークで書いてください。
+blackboard|黒板|Look at the blackboard.|黒板を見てください。
+whiteboard|ホワイトボード|Write on the whiteboard.|ホワイトボードに書いてください。
+paper|紙|I need some paper.|私は紙が少し必要です。
+page|ページ|Turn the page.|ページをめくってください。
+letter|手紙
+stamp|切手
+card|カード
+map|地図
+bag|かばん
+backpack|リュックサック
+box|箱
+case|ケース
+file|ファイル
+scissors|はさみ|These scissors are sharp.|このはさみは鋭いです。
+calendar|カレンダー
+clock|時計
+watch|腕時計
+key|鍵
+umbrella|傘
+wallet|財布
+ticket|切符
+pass|通行証
+name|名前
+number|番号
+address|住所
+homework|宿題
+test|試験|The test is easy.|その試験は簡単です。
+exam|試験|The exam starts now.|試験が今始まります。
+quiz|小テスト|We have a quiz today.|私たちは今日小テストを受けます。
+question|質問|I have a question.|私は質問があります。
+answer|答え|Write your answer.|答えを書いてください。
+lesson|授業|The lesson starts now.|授業が今始まります。
+subject|教科|What subject do you like?|あなたは何の教科が好きですか。
+grade|学年|What grade are you in?|あなたは何年生ですか。
+score|得点|My score is high.|私の得点は高いです。
+mark|印|Make a mark here.|ここに印を付けてください。
+mistake|間違い|I made a mistake.|私は間違えました。
+rule|規則|Follow the rule.|その規則に従ってください。
+uniform|制服
+club|クラブ|Join our club.|私たちのクラブに入ってください。
+library|図書館|This library is quiet.|この図書館は静かです。
+gym|体育館|We meet in the gym.|私たちは体育館で会います。
+pool|プール|This pool is large.|このプールは大きいです。
+playground|運動場|The playground is big.|その運動場は大きいです。
+science|理科|I study science.|私は理科を勉強します。
+math|数学|I study math.|私は数学を勉強します。
+English|英語|I study English.|私は英語を勉強します。
+Japanese|日本語|I study Japanese.|私は日本語を勉強します。
+history|歴史|I study history.|私は歴史を勉強します。
+art|美術|I like art.|私は美術が好きです。
+music|音楽|I like music.|私は音楽が好きです。
+sport|スポーツ|Tennis is a sport.|テニスはスポーツです。
+exercise|運動|We need exercise.|私たちには運動が必要です。
+practice|練習|We have practice today.|私たちは今日練習があります。
+report|報告書
+sentence|文|Read this sentence.|この文を読んでください。
+word|単語|Write this word.|この単語を書いてください。
+language|言語|English is a language.|英語は言語です。
+alphabet|アルファベット|Learn the alphabet.|アルファベットを学んでください。
+sound|音|I hear a sound.|私は音が聞こえます。
+voice|声|Her voice is clear.|彼女の声ははっきりしています。
+meaning|意味|Tell me the meaning.|意味を教えてください。
+example|例|Give me an example.|例を一つ挙げてください。
+story|物語|Read this story.|この物語を読んでください。
+poem|詩|I wrote a poem.|私は詩を書きました。
+title|題名|What is the title?|題名は何ですか。
