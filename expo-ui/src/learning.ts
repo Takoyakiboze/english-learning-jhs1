@@ -14,6 +14,19 @@ export type Question = Word & {
 export const normalize = (s: string) => s.trim().toLowerCase();
 export const isCorrectAnswer = (q: Question, value: string) => q.acceptedAnswers.some(a => normalize(a) === normalize(value));
 
+export function questionHint(q: Question): string {
+  if (q.type === 'choice') {
+    // Categories such as 「人・仕事」 or 「家・日用品」 can themselves expose a short answer.
+    const clues = [
+      `品詞：${q.partOfSpeech}`,
+      `分野：${q.category}`,
+    ].filter(clue => !clue.includes(q.answer));
+    return clues.join(' ／ ') || '選択肢をもう一度見比べてみよう。';
+  }
+  if (q.answer.length === 1) return 'アルファベット1文字の単語だよ';
+  return `「${q.answer[0]}」で始まる${q.answer.length}文字の単語だよ`;
+}
+
 function shuffle<T>(items: T[], random: () => number): T[] {
     const a = [...items];
     for (let i = a.length - 1; i > 0; i--) {

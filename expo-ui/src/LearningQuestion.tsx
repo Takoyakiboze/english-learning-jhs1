@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Keyboard, KeyboardAvoidingView, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { maskExample, Question } from './learning';
+import { maskExample, questionHint, Question } from './learning';
 
 type Props = {
   question: Question; progress: string; answer: string; feedback: boolean | null;
@@ -29,7 +29,7 @@ export default function LearningQuestion(p: Props) {
         {(q.type !== 'blank' || p.feedback !== null) && <Text style={s.exampleEnglish}>例文：{p.feedback === null ? maskExample(q.example, q.word) : q.example}</Text>}
         <Text testID="question-translation" style={s.translation}>和訳：{q.translation}</Text>
       </View>
-      {<View style={[s.hintRow, typing && s.compactHintRow]}><Pressable accessibilityRole="button" accessibilityState={{ expanded: hint }} onPress={() => setHint(v => !v)} style={s.hintButton}><Text style={s.hintLabel}>{hint ? 'ヒントを閉じる' : 'ヒントを見る'}</Text></Pressable><Text accessibilityLiveRegion="polite" style={s.hint}>{hint ? `「${q.answer[0]}」で始まる${q.answer.length}文字の${q.type === 'choice' ? '意味' : '単語'}だよ` : ''}</Text></View>}
+      {<View style={[s.hintRow, typing && s.compactHintRow]}><Pressable accessibilityRole="button" accessibilityState={{ expanded: hint }} onPress={() => setHint(v => !v)} style={s.hintButton}><Text style={s.hintLabel}>{hint ? 'ヒントを閉じる' : 'ヒントを見る'}</Text></Pressable><Text testID="question-hint" accessibilityLiveRegion="polite" style={s.hint}>{hint ? questionHint(q) : ''}</Text></View>}
       {q.options ? <View style={s.grid}>{q.options.map(value => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: p.answer === value }} onPress={() => p.onAnswer(value)} style={[s.option, p.answer === value && s.selected]}><Text style={s.optionText}>{value}</Text></Pressable>)}</View> : <TextInput accessibilityLabel="解答" value={p.answer} onChangeText={p.onAnswer} style={s.input} autoCapitalize="none" autoCorrect={false} placeholder="答えを入力" returnKeyType="done" onSubmitEditing={p.feedback === null ? check : Keyboard.dismiss} />}
       <View style={[s.message, typing && p.feedback === null && { minHeight: 8, paddingVertical: 0 }]} accessibilityLiveRegion="polite">
         {p.feedback !== null && <Text style={[s.feedback, { color: p.feedback ? '#245d4a' : '#875716' }]}>{p.feedback ? '○ 正解！' : 'もう一度、覚えよう'}</Text>}

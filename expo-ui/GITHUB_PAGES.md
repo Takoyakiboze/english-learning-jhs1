@@ -38,7 +38,7 @@ Gitの除外設定で `node_modules/`、`.expo/`、`dist-pages/`、`dist-web/`�
 3. `main` にpushするか、**Actions → Publish vocabulary app to GitHub Pages → Run workflow** を実行します。メインブランチ名が違う場合は `pages.yml` の `branches` を変更します。
 4. Actionsの成功後、Pagesに表示された公開URLを開きます。
 
-ワークフローはNode.js 24で `npm ci`、lint、型チェック、教材検査、静的Webビルド、Chromiumでの21件のテストを実行してから、`expo-ui/dist-pages/` だけを公開します。リポジトリ名付きURL・ユーザーサイト・独自ドメインのパスは `actions/configure-pages` の出力から設定します。外部サービス用のAPIキー登録は不要です。
+ワークフローはNode.js 24で `npm ci`、lint、型チェック、教材検査、静的Webビルド、Chromiumでの全テストを実行してから、`expo-ui/dist-pages/` だけを公開します。リポジトリ名付きURL・ユーザーサイト・独自ドメインのパスは `actions/configure-pages` の出力から設定します。外部サービス用のAPIキー登録は不要です。
 
 `expo-ui/` だけをリポジトリのルートにする場合は、親にある `.github/` を同じルートへ移し、ワークフローの `working-directory` を `.`、`cache-dependency-path` を `package-lock.json`、公開する `path` を `dist-pages` に変更してください。
 

@@ -92,13 +92,46 @@ test('hints and all question formats fit a small phone without scrolling', async
   await begin(page);
   for (let i = 0; i < SESSION_SIZE; i++) {
     await page.getByRole('button', { name: 'ヒントを見る', exact: true }).click();
-    await expect(page.getByText(/で始まる.*文字/)).toBeVisible();
+    const hint = page.getByTestId('question-hint');
+    await expect(hint).toBeVisible();
+    if (await page.getByText('意味を選ぼう', { exact: true }).count()) {
+      await expect(hint).toContainText('品詞：');
+      await expect(hint).not.toContainText('で始まる');
+    } else {
+      await expect(hint).toContainText(/文字の単語/);
+    }
     const check = await page.getByRole('button', { name: '答え合わせ', exact: true }).boundingBox();
     expect(check!.y + check!.height).toBeLessThanOrEqual(667);
     await answerQuestion(page, i === SESSION_SIZE - 1);
   }
   await answerQuestion(page);
   await expect(page.getByText('あと一歩。次の20問に挑戦しよう', { exact: true })).toBeVisible();
+});
+
+test('the meaning hint for I does not disclose its answer and hints reset between formats', async ({ page }) => {
+  const records = words.filter(w => w.level === 1 && w.word !== 'I')
+    .map(w => ({ wordId: w.id, consecutiveCorrect: 2, mastered: true, lastSessionId: 'seed', lastPracticedAt: 1 }));
+  await page.addInitScript(({ key, records }) => {
+    localStorage.setItem(key, JSON.stringify({ version: 1, curriculum: 'levels-v1', records }));
+    Math.random = () => .999999;
+  }, { key: PROGRESS_STORAGE_KEY, records });
+  await begin(page);
+  await expect(page.getByTestId('question-prompt')).toHaveText('I');
+  await page.getByRole('button', { name: 'ヒントを見る', exact: true }).click();
+  const hint = page.getByTestId('question-hint');
+  await expect(hint).toContainText('代名詞');
+  await expect(hint).not.toContainText('私');
+  await expect(hint).not.toContainText('で始まる');
+  await page.getByRole('button', { name: 'ヒントを閉じる', exact: true }).click();
+  await expect(hint).toBeEmpty();
+  await answerQuestion(page);
+  for (const label of ['英語で入力しよう', '空欄を英語で埋めよう']) {
+    await expect(page.getByText(label, { exact: true })).toBeVisible();
+    await expect(hint).toBeEmpty();
+    await page.getByRole('button', { name: 'ヒントを見る', exact: true }).click();
+    await expect(hint).toContainText(/で始まる.*文字の単語/);
+    await answerQuestion(page);
+  }
 });
 test('19/20 and correction + review do not grant reward', async ({ page }) => {
   await begin(page);
