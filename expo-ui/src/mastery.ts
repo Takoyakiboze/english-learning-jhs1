@@ -3,6 +3,7 @@ import { levels, words } from './curriculum';
 export const PROGRESS_STORAGE_KEY = 'kotoba:mastery:v1';
 export const MASTERY_THRESHOLD = 2;
 export const WORDS_PER_LEVEL = 120;
+export const LEVEL_ADVANCE_WORDS = Math.ceil(WORDS_PER_LEVEL * .8);
 export type MasteryRecord = { wordId: string; consecutiveCorrect: number; mastered: boolean; lastSessionId: string; lastPracticedAt: number };
 export type PracticeResult = {wordId: string; correct: boolean};
 const byId = new Map(words.map(w => [w.id,w]));
@@ -11,11 +12,11 @@ export function levelProgress(records: readonly MasteryRecord[]) {
   const mastered = new Set(records.filter(r => r.mastered).map(r => r.wordId));
   return levels.map(level => {
     const count = words.filter(w => w.level === level.level && mastered.has(w.id)).length;
-    return {...level, mastered: count, total: WORDS_PER_LEVEL, complete: count === WORDS_PER_LEVEL};
+    return {...level, mastered: count, total: WORDS_PER_LEVEL, advanceReady: count >= LEVEL_ADVANCE_WORDS, complete: count === WORDS_PER_LEVEL};
   });
 }
 export function currentLevel(records: readonly MasteryRecord[]): number {
-  return levelProgress(records).find(level => !level.complete)?.level ?? levels.length;
+  return levelProgress(records).find(level => !level.advanceReady)?.level ?? levels.length;
 }
 
 // Only a completed set's initial answers count. Corrections and repeat taps cannot

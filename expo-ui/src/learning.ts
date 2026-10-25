@@ -5,11 +5,12 @@ export { maskExample, words } from './curriculum';
 
 export const SESSION_SIZE = 20;
 export const REVIEW_QUOTA = 5;
+export const EARLIER_REVIEW_QUOTA = 5;
 export const ASSESSMENT_SIZE = 10;
 
 export type Question = Word & {
   prompt: string; answer: string; type: 'choice' | 'spell' | 'blank';
-  options?: string[]; review?: boolean; fromMistake?: boolean; acceptedAnswers: string[];
+  options?: string[]; review?: boolean; fromMistake?: boolean; fromEarlierLevel?: boolean; acceptedAnswers: string[];
 };
 export const normalize = (s: string) => s.trim().toLowerCase();
 export const isCorrectAnswer = (q: Question, value: string) => q.acceptedAnswers.some(a => normalize(a) === normalize(value));
@@ -64,12 +65,19 @@ export function buildLearningSession(records: readonly MistakeRecord[], random =
   const allMistakes = new Set(history.map(r => r.wordId));
   const byId = new Map(mastery.map(r => [r.wordId,r]));
   const reviewWords = pool.filter(w => priority.has(w.id));
-  const pending = shuffle(pool.filter(w => w.level === active && !byId.get(w.id)?.mastered && !priority.has(w.id)), random)
+  const pending = (candidates: Word[]) => shuffle(candidates, random)
     .sort((a,b) => Number(allMistakes.has(a.id)) - Number(allMistakes.has(b.id)) || (byId.get(a.id)?.lastPracticedAt || 0) - (byId.get(b.id)?.lastPracticedAt || 0));
-  const ordinary = pending.slice(0, SESSION_SIZE - reviewWords.length);
-  // Near the end of a level, fill spare slots with already unlocked vocabulary.
-  const used = new Set([...reviewWords, ...ordinary].map(w => w.id));
+  const earlier = pending(pool.filter(w => w.level < active && !byId.get(w.id)?.mastered && !priority.has(w.id)))
+    .slice(0, EARLIER_REVIEW_QUOTA);
+  const used = new Set([...reviewWords, ...earlier].map(w => w.id));
+  const ordinary = pending(pool.filter(w => w.level === active && !byId.get(w.id)?.mastered && !used.has(w.id)))
+    .slice(0, SESSION_SIZE - used.size);
+  ordinary.forEach(w => used.add(w.id));
+  // Keep filling with unmastered words, including earlier levels after level 10.
+  const remaining = pending(pool.filter(w => !byId.get(w.id)?.mastered && !used.has(w.id)))
+    .slice(0, SESSION_SIZE - used.size);
+  remaining.forEach(w => used.add(w.id));
   const extra = shuffle(pool.filter(w => !used.has(w.id)), random).slice(0, SESSION_SIZE - used.size);
-  return makeQuestions(shuffle([...reviewWords, ...ordinary, ...extra], random), random, pool)
-    .map(q => ({...q, fromMistake: allMistakes.has(q.id)}));
+  return makeQuestions(shuffle([...reviewWords, ...earlier, ...ordinary, ...remaining, ...extra], random), random, pool)
+    .map(q => ({...q, fromMistake: allMistakes.has(q.id), fromEarlierLevel: q.level < active && !byId.get(q.id)?.mastered}));
 }

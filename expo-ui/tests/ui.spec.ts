@@ -109,12 +109,10 @@ test('hints and all question formats fit a small phone without scrolling', async
 });
 
 test('the meaning hint for I does not disclose its answer and hints reset between formats', async ({ page }) => {
-  const records = words.filter(w => w.level === 1 && w.word !== 'I')
-    .map(w => ({ wordId: w.id, consecutiveCorrect: 2, mastered: true, lastSessionId: 'seed', lastPracticedAt: 1 }));
-  await page.addInitScript(({ key, records }) => {
-    localStorage.setItem(key, JSON.stringify({ version: 1, curriculum: 'levels-v1', records }));
+  await page.addInitScript(key => {
+    localStorage.setItem(key, JSON.stringify({ version: 1, records: [{wordId:'word-I',misses:1,lastWrongAt:1,lastReviewedAt:0}] }));
     Math.random = () => .999999;
-  }, { key: PROGRESS_STORAGE_KEY, records });
+  }, MISTAKES_STORAGE_KEY);
   await begin(page);
   await expect(page.getByTestId('question-prompt')).toHaveText('I');
   await page.getByRole('button', { name: 'ヒントを見る', exact: true }).click();
@@ -183,33 +181,61 @@ test('tablet, assessment and interruption', async ({ page }) => {
   await page.getByRole('button',{name:'中断してホームへ',exact:true}).click();
   await expect(page.getByText('はるさん、こんにちは。',{exact:true})).toBeVisible();
 });
-test('level advancement requires every word and survives reload; future levels stay locked', async ({page}) => {
+test('80 percent advancement survives reload and carries earlier unmastered words forward', async ({page}) => {
+  await page.setViewportSize({width:375,height:667});
   const group=words.filter(w=>w.level===1);
-  const records=group.map((w,i)=>({wordId:w.id,consecutiveCorrect:i===119?1:2,mastered:i!==119,lastSessionId:'seed',lastPracticedAt:1}));
+  const records=group.map((w,i)=>({wordId:w.id,consecutiveCorrect:i<95?2:i===95?1:0,mastered:i<95,lastSessionId:'seed',lastPracticedAt:1}));
   await page.addInitScript(({key,records})=>{
     if(!localStorage.getItem(key)) localStorage.setItem(key,JSON.stringify({version:1,curriculum:'levels-v1',records}));
+    Math.random=()=>.999999;
   },{key:PROGRESS_STORAGE_KEY,records});
   await page.goto('./');
   await page.getByRole('button',{name:'この設定ではじめる',exact:true}).click();
   await page.getByRole('tab',{name:'目標',exact:true}).click();
-  await expect(page.getByTestId('level-1')).toContainText('119 / 120語');
+  await expect(page.getByTestId('level-1')).toContainText('95 / 120語');
   await expect(page.getByTestId('level-2')).toContainText('未解放');
   await page.getByRole('button',{name:'この目標で学ぶ',exact:true}).click();
   const asked: string[]=[];
   for(let i=0;i<20;i++) asked.push(await answerQuestion(page));
   expect(asked.every(id=>group.some(w=>w.id===id))).toBe(true);
-  expect(asked).toContain(group[119].id);
-  await expect(page.getByText('レベル1を習得！次のレベルへ進めます。',{exact:true})).toBeVisible();
-  await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).records.filter((r:{mastered:boolean})=>r.mastered).length,PROGRESS_STORAGE_KEY)).toBe(120);
+  expect(asked).toContain(group[95].id);
+  await expect(page.getByText('レベル1で8割を習得！次のレベルへ進めます。',{exact:true})).toBeVisible();
+  await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).records.filter((r:{mastered:boolean})=>r.mastered).length,PROGRESS_STORAGE_KEY)).toBe(96);
   await page.goto('./');
   await page.getByRole('button',{name:'この設定ではじめる',exact:true}).click();
   await page.getByRole('tab',{name:'目標',exact:true}).click();
-  await expect(page.getByTestId('level-1')).toContainText('習得済み');
+  await expect(page.getByTestId('level-1')).toContainText('8割達成・復習中');
+  await expect(page.getByTestId('level-1')).toContainText('96 / 120語');
   await expect(page.getByTestId('level-2')).toContainText('学習中');
   await expect(page.getByTestId('level-3')).toContainText('未解放');
   await page.getByRole('button',{name:'この目標で学ぶ',exact:true}).click();
+  await expect(page.getByTestId(/^question-word-/)).toBeVisible();
+  let earlierCount=0;
+  let currentCount=0;
   for(let i=0;i<20;i++) {
+    const earlier=await page.getByTestId('earlier-level-review').count()>0;
     const id=await answerQuestion(page);
-    expect(words.find(w=>w.id===id)!.level).toBe(2);
+    const level=words.find(w=>w.id===id)!.level;
+    if(earlier) { earlierCount++; expect(level).toBe(1); expect(group.slice(96).some(w=>w.id===id)).toBe(true); }
+    else { currentCount++; expect(level).toBe(2); }
   }
+  expect(earlierCount).toBe(5);
+  expect(currentCount).toBe(15);
+});
+
+test('all levels at 80 percent keep reviewing without claiming complete mastery', async ({page}) => {
+  const records=Array.from({length:10},(_,i)=>i+1).flatMap(level=>words.filter(w=>w.level===level).slice(0,96)
+    .map(w=>({wordId:w.id,consecutiveCorrect:2,mastered:true,lastSessionId:'seed',lastPracticedAt:1})));
+  await page.addInitScript(({key,records})=>{
+    localStorage.setItem(key,JSON.stringify({version:1,curriculum:'levels-v1',records}));
+  },{key:PROGRESS_STORAGE_KEY,records});
+  await page.goto('./');
+  await page.getByRole('button',{name:'この設定ではじめる',exact:true}).click();
+  await expect(page.getByText(/前のレベルの未習得語：216語/)).toBeVisible();
+  await page.getByRole('tab',{name:'目標',exact:true}).click();
+  await expect(page.getByTestId('level-10')).toContainText('8割達成・復習中');
+  await page.getByRole('button',{name:'この目標で学ぶ',exact:true}).click();
+  for(let i=0;i<20;i++) await answerQuestion(page);
+  await expect(page.getByText('全10レベルで8割を習得！残りの単語も復習しよう。',{exact:true})).toBeVisible();
+  await expect(page.getByText('全10レベルを習得しました！',{exact:true})).toHaveCount(0);
 });

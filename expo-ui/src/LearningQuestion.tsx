@@ -22,6 +22,7 @@ export default function LearningQuestion(p: Props) {
   return <KeyboardAvoidingView style={[s.screen, { paddingTop: inset.top, paddingBottom: inset.bottom }]} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
     {!typing && <View style={s.header}><Text testID="question-progress" style={s.progress}>{p.progress}</Text><Pressable accessibilityRole="button" onPress={p.onExit} style={s.exit}><Text>中断してホームへ</Text></Pressable></View>}
     <View testID={`question-${q.id}`} style={s.body}>
+      {q.fromEarlierLevel && !q.review && <Text testID="earlier-level-review" style={s.label}>前のレベルの未習得語 · Lv.{q.level}</Text>}
       {q.fromMistake && !q.review && <Text testID="past-mistake" style={s.label}>前に間違えた単語の復習</Text>}
       <Text style={s.label}>{q.type === 'choice' ? '意味を選ぼう' : q.type === 'spell' ? '英語で入力しよう' : '空欄を英語で埋めよう'}</Text>
       <Text testID="question-prompt" style={[s.question, typing && s.compactQuestion]}>{q.prompt}</Text>
