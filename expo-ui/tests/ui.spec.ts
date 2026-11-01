@@ -177,6 +177,7 @@ test('tablet, assessment and interruption', async ({ page }) => {
   await page.getByRole('button',{name:'確認テストを受ける',exact:true}).click();
   for(let i=0;i<10;i++) await answerQuestion(page);
   await expect(page.getByText('実力チェックの結果',{exact:true})).toBeVisible();
+  await expect(page.getByTestId('result-encouragement')).toContainText('10問の実力チェック、やりきったね！');
   expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key) || '{"records":[]}').records.length, PROGRESS_STORAGE_KEY)).toBe(0);
   await page.getByRole('button',{name:'ホームへ',exact:true}).click();
   await page.getByRole('button',{name:'今日の学習をはじめる →',exact:true}).click();
@@ -202,6 +203,7 @@ test('80 percent advancement survives reload and carries earlier unmastered word
   expect(asked.every(id=>group.some(w=>w.id===id))).toBe(true);
   expect(asked).toContain(group[95].id);
   await expect(page.getByText('レベル1で8割を習得！次のレベルへ進めます。',{exact:true})).toBeVisible();
+  await expect(page.getByTestId('result-encouragement')).toContainText('レベル1で8割習得！おめでとう！');
   await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).records.filter((r:{mastered:boolean})=>r.mastered).length,PROGRESS_STORAGE_KEY)).toBe(96);
   await page.goto('./');
   await page.getByRole('button',{name:'この設定ではじめる',exact:true}).click();

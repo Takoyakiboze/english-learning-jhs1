@@ -7,7 +7,7 @@ import usePronunciation from './usePronunciation';
 
 type Props = {
   question: Question; progress: string; answer: string; feedback: boolean | null;
-  notice: string; last: boolean; onAnswer: (value: string) => void;
+  notice: string; encouragement: string; last: boolean; onAnswer: (value: string) => void;
   onCheck: () => boolean | null; onNext: () => void; onExit: () => void;
 };
 export default function LearningQuestion(p: Props) {
@@ -41,6 +41,7 @@ export default function LearningQuestion(p: Props) {
       {q.options ? <View style={s.grid}>{q.options.map(value => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: p.answer === value }} onPress={() => p.onAnswer(value)} style={[s.option, p.answer === value && s.selected]}><Text style={s.optionText}>{value}</Text></Pressable>)}</View> : <TextInput accessibilityLabel="解答" value={p.answer} onChangeText={p.onAnswer} style={s.input} autoCapitalize="none" autoCorrect={false} placeholder="答えを入力" returnKeyType="done" onSubmitEditing={p.feedback === null ? check : Keyboard.dismiss} />}
       <View style={[s.message, typing && p.feedback === null && { minHeight: 8, paddingVertical: 0 }]} accessibilityLiveRegion="polite">
         {p.feedback !== null && <Text style={[s.feedback, { color: p.feedback ? '#245d4a' : '#875716' }]}>{p.feedback ? '○ 正解！' : 'もう一度、覚えよう'}</Text>}
+        {p.feedback !== null && <Text testID="answer-encouragement" style={s.praise}>{p.encouragement}</Text>}
         {p.feedback !== null && <Text style={s.detail}>正解：{q.answer}{!p.feedback ? ' · 正しい答えに直して次へ' : ''}</Text>}
         {!!p.notice && <Text style={s.detail}>{p.notice}</Text>}
         {!!speech.error && <Text testID="speech-error" style={s.detail}>{speech.error}</Text>}
@@ -59,6 +60,6 @@ const s = StyleSheet.create({
   compactQuestion: { fontSize: 23, lineHeight: 28, marginVertical: 6 }, compactHintRow: { marginVertical: 0 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 }, option: { width: '48%', minHeight: 56, padding: 12, borderRadius: 14, borderWidth: 2, borderColor: '#dde5d7', backgroundColor: '#fff', justifyContent: 'center' }, selected: { borderColor: '#245d4a', backgroundColor: '#e9efdf' }, optionText: { fontSize: 17, color: '#243e32' },
   input: { height: 48, paddingHorizontal: 14, borderRadius: 12, borderWidth: 1, borderColor: '#cdd8c7', backgroundColor: '#fff', color: '#243e32', fontSize: 18 },
-  message: { minHeight: 62, paddingVertical: 8 }, feedback: { fontSize: 17, fontWeight: '700' }, detail: { color: '#637268', fontSize: 13, lineHeight: 19 },
+  message: { minHeight: 62, paddingVertical: 8 }, feedback: { fontSize: 17, fontWeight: '700' }, praise: { color: '#245d4a', fontSize: 13, lineHeight: 18 }, detail: { color: '#637268', fontSize: 13, lineHeight: 19 },
   primary: { backgroundColor: '#245d4a', minHeight: 48, borderRadius: 14, padding: 12, alignItems: 'center', justifyContent: 'center' }, primaryText: { color: '#fff', fontWeight: '700', fontSize: 16 },
 });
