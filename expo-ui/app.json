@@ -2,7 +2,6 @@
     "expo":  {
                  "name":  "ことばの時間",
                  "slug":  "learning-reward-ui",
-                 "version":  "1.0.0",
                  "orientation":  "default",
                  "icon":  "./assets/icon.png",
                  "userInterfaceStyle":  "light",

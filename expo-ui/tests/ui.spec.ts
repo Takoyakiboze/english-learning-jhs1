@@ -2,7 +2,9 @@ import { test, expect, Page } from '@playwright/test';
 import { maskExample, words, SESSION_SIZE } from '../src/learning';
 import { MISTAKES_STORAGE_KEY } from '../src/mistakes';
 import { PROGRESS_STORAGE_KEY } from '../src/mastery';
+import { installSpeechMock } from './helpers/speech';
 test.setTimeout(90_000);
+test.beforeEach(async ({ page }) => { await installSpeechMock(page); });
 async function begin(page: Page) {
   await page.goto('./');
   await page.getByRole('button', { name: 'この設定ではじめる', exact: true }).click();
@@ -43,7 +45,7 @@ async function answerQuestion(page: Page, incorrect = false) {
   else await page.getByRole('button', { name: '次へ →', exact: true }).click();
   await expect.poll(async()=>{
     if(await page.getByTestId(`question-${word.id}`).count()===0) return true;
-    return await page.getByTestId('question-progress').innerText()!==previousProgress;
+    return (await page.getByTestId('question-progress').allTextContents())[0]!==previousProgress;
   }).toBe(true);
   return word.id;
 }

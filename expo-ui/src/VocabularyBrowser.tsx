@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { categories, levels, words } from './curriculum';
 import { currentLevel, type MasteryRecord } from './mastery';
+import PronunciationControls from './PronunciationControls';
+import usePronunciation from './usePronunciation';
 
 const PAGE_SIZE = 20;
 export default function VocabularyBrowser({mastery = []}: {mastery?: readonly MasteryRecord[]}) {
@@ -9,6 +11,7 @@ export default function VocabularyBrowser({mastery = []}: {mastery?: readonly Ma
   const [category, setCategory] = useState('すべて');
   const [page, setPage] = useState(0);
   const [level, setLevel] = useState(0);
+  const speech = usePronunciation();
   const mastered = new Set(mastery.filter(r=>r.mastered).map(r=>r.wordId));
   const active = currentLevel(mastery);
   const matches = words.filter(w =>
@@ -26,10 +29,12 @@ export default function VocabularyBrowser({mastery = []}: {mastery?: readonly Ma
       {['すべて', ...categories].map(c => <Pressable key={c} accessibilityRole="button" accessibilityState={{ selected: category === c }} onPress={() => { setCategory(c); setPage(0); }} style={[s.chip, category === c && s.selected]}><Text style={{color: category === c ? '#fff' : '#245d4a'}}>{c}</Text></Pressable>)}
     </ScrollView>
     <Text accessibilityLiveRegion="polite" style={s.note}>{matches.length.toLocaleString()}語 · {page + 1} / {pages}ページ</Text>
-    {matches.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE).map(w => <View key={w.id} style={s.entry}>
+    {!!speech.error && <Text testID="speech-error" accessibilityLiveRegion="polite" style={s.note}>{speech.error}</Text>}
+    {matches.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE).map(w => <View key={w.id} testID={`vocabulary-${w.id}`} style={s.entry}>
       <Text style={s.word}>{w.word}　{w.meaning}</Text>
       <Text style={s.note}>レベル{w.level} · {w.partOfSpeech} · {w.category} · {mastered.has(w.id)?'習得済み':w.level>active?'未解放':'学習中'}</Text>
       <Text style={s.example}>{w.example}</Text><Text style={s.example}>{w.translation}</Text>
+      <PronunciationControls word={w.word} example={w.example} onPlay={speech.play} onStop={speech.stop}/>
     </View>)}
     {matches.length === 0 && <Text style={s.note}>一致する単語がありません。</Text>}
     <View style={s.controls}>

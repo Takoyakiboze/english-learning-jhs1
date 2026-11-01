@@ -2,15 +2,18 @@ import { useEffect, useState } from 'react';
 import { Keyboard, KeyboardAvoidingView, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { maskExample, questionHint, Question } from './learning';
+import PronunciationControls from './PronunciationControls';
+import usePronunciation from './usePronunciation';
 
 type Props = {
   question: Question; progress: string; answer: string; feedback: boolean | null;
   notice: string; last: boolean; onAnswer: (value: string) => void;
-  onCheck: () => void; onNext: () => void; onExit: () => void;
+  onCheck: () => boolean | null; onNext: () => void; onExit: () => void;
 };
 export default function LearningQuestion(p: Props) {
   const [hint, setHint] = useState(false);
   const [typing, setTyping] = useState(false);
+  const speech = usePronunciation();
   useEffect(() => {
     const show = Keyboard.addListener('keyboardDidShow', () => setTyping(true));
     const hide = Keyboard.addListener('keyboardDidHide', () => setTyping(false));
@@ -18,7 +21,10 @@ export default function LearningQuestion(p: Props) {
   }, []);
   const inset = useSafeAreaInsets();
   const q = p.question;
-  const check = () => { Keyboard.dismiss(); p.onCheck(); };
+  const check = () => {
+    Keyboard.dismiss();
+    if (p.onCheck() === true) speech.play([q.word, q.example]);
+  };
   return <KeyboardAvoidingView style={[s.screen, { paddingTop: inset.top, paddingBottom: inset.bottom }]} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
     {!typing && <View style={s.header}><Text testID="question-progress" style={s.progress}>{p.progress}</Text><Pressable accessibilityRole="button" onPress={p.onExit} style={s.exit}><Text>中断してホームへ</Text></Pressable></View>}
     <View testID={`question-${q.id}`} style={s.body}>
@@ -29,13 +35,15 @@ export default function LearningQuestion(p: Props) {
       <View style={s.example}>
         {(q.type !== 'blank' || p.feedback !== null) && <Text style={s.exampleEnglish}>例文：{p.feedback === null ? maskExample(q.example, q.word) : q.example}</Text>}
         <Text testID="question-translation" style={s.translation}>和訳：{q.translation}</Text>
+        {p.feedback !== null && <PronunciationControls word={q.word} example={q.example} onPlay={speech.play} onStop={speech.stop}/>}
       </View>
-      {<View style={[s.hintRow, typing && s.compactHintRow]}><Pressable accessibilityRole="button" accessibilityState={{ expanded: hint }} onPress={() => setHint(v => !v)} style={s.hintButton}><Text style={s.hintLabel}>{hint ? 'ヒントを閉じる' : 'ヒントを見る'}</Text></Pressable><Text testID="question-hint" accessibilityLiveRegion="polite" style={s.hint}>{hint ? questionHint(q) : ''}</Text></View>}
+      {p.feedback === null && <View style={[s.hintRow, typing && s.compactHintRow]}><Pressable accessibilityRole="button" accessibilityState={{ expanded: hint }} onPress={() => setHint(v => !v)} style={s.hintButton}><Text style={s.hintLabel}>{hint ? 'ヒントを閉じる' : 'ヒントを見る'}</Text></Pressable><Text testID="question-hint" accessibilityLiveRegion="polite" style={s.hint}>{hint ? questionHint(q) : ''}</Text></View>}
       {q.options ? <View style={s.grid}>{q.options.map(value => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: p.answer === value }} onPress={() => p.onAnswer(value)} style={[s.option, p.answer === value && s.selected]}><Text style={s.optionText}>{value}</Text></Pressable>)}</View> : <TextInput accessibilityLabel="解答" value={p.answer} onChangeText={p.onAnswer} style={s.input} autoCapitalize="none" autoCorrect={false} placeholder="答えを入力" returnKeyType="done" onSubmitEditing={p.feedback === null ? check : Keyboard.dismiss} />}
       <View style={[s.message, typing && p.feedback === null && { minHeight: 8, paddingVertical: 0 }]} accessibilityLiveRegion="polite">
         {p.feedback !== null && <Text style={[s.feedback, { color: p.feedback ? '#245d4a' : '#875716' }]}>{p.feedback ? '○ 正解！' : 'もう一度、覚えよう'}</Text>}
         {p.feedback !== null && <Text style={s.detail}>正解：{q.answer}{!p.feedback ? ' · 正しい答えに直して次へ' : ''}</Text>}
         {!!p.notice && <Text style={s.detail}>{p.notice}</Text>}
+        {!!speech.error && <Text testID="speech-error" style={s.detail}>{speech.error}</Text>}
       </View>
       <Pressable accessibilityRole="button" accessibilityState={{ disabled: p.feedback === null && !p.answer.trim() }} disabled={p.feedback === null && !p.answer.trim()} onPress={p.feedback === null ? check : () => { Keyboard.dismiss(); p.onNext(); }} style={[s.primary, p.feedback === null && !p.answer.trim() && { opacity: .4 }]}><Text style={s.primaryText}>{p.feedback === null ? '答え合わせ' : p.last ? '結果を見る' : '次へ →'}</Text></Pressable>
     </View>
