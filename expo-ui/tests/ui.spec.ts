@@ -49,28 +49,44 @@ async function answerQuestion(page: Page, incorrect = false) {
   }).toBe(true);
   return word.id;
 }
-test('20/20 grants reward and demo usage, navigation and reset work', async ({ page }) => {
+async function expectLearningNavigation(page: Page) {
+  await expect(page.getByRole('tab')).toHaveText(['ホーム', '記録', '目標', '設定']);
+  await expect(page.getByText(/ごほうび|ご褒美|報酬|残高|例外解除|利用をはじめる/)).toHaveCount(0);
+}
+test('20/20 shows learning results, navigation and reset without rewards', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await begin(page);
   for (let i=0; i<SESSION_SIZE; i++) await answerQuestion(page);
-  await expect(page.getByText('10分のごほうびを獲得！', { exact: true })).toBeVisible();
+  await expect(page.getByText('20問ぜんぶ正解！', { exact: true })).toBeVisible();
+  await expectLearningNavigation(page);
   await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || '{"records":[]}').records.length, PROGRESS_STORAGE_KEY)).toBe(20);
   expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key)!).records.some((r: {mastered:boolean})=>r.mastered), PROGRESS_STORAGE_KEY)).toBe(false);
-  await page.getByRole('button', { name: 'ごほうびを確認', exact: true }).click();
-  await page.getByRole('button', { name: '利用をはじめる', exact: true }).click();
-  await expect(page.getByText('利用中（デモ）', { exact: true })).toBeVisible();
-  await page.getByRole('button', { name: '利用終了・再制限を確認', exact: true }).click();
   await page.getByRole('tab', { name: '記録', exact: true }).click();
   await expect(page.getByText('通常学習　20/20問', { exact: true })).toBeVisible();
   await page.getByRole('tab', { name: '目標', exact: true }).click();
   await page.getByRole('button', { name: '学校の復習', exact: true }).click();
+  await expectLearningNavigation(page);
   await page.getByRole('tab', { name: '設定', exact: true }).click();
+  await expect(page.getByText('学習の設定', { exact: true })).toBeVisible();
+  await expectLearningNavigation(page);
   await page.getByRole('button', { name: '検証データを初期化', exact: true }).click();
   await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || '{"records":[]}').records.length, PROGRESS_STORAGE_KEY)).toBe(0);
-  await page.getByRole('tab', { name: '報酬', exact: true }).click();
-  await expect(page.getByRole('button', { name: '利用をはじめる', exact: true })).toBeDisabled();
-  await page.screenshot({ path: 'artifacts/mobile-rewards.png', fullPage: true });
+  await page.getByRole('tab', { name: 'ホーム', exact: true }).click();
+  await expectLearningNavigation(page);
+  await expect(page.getByTestId('home-encouragement')).toContainText('最初の1問');
+  await page.screenshot({ path: 'artifacts/mobile-home.png', fullPage: true });
   expect(errors).toEqual([]);
+});
+test('removed reward bookmarks and unknown screens open the learning home', async ({ page }) => {
+  for (const screen of ['報酬', 'unknown']) {
+    await page.goto(`./?screen=${encodeURIComponent(screen)}`);
+    await expect(page.getByText(/ごほうび|ご褒美|報酬|残高|例外解除/)).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'ゲーム', exact: true })).toHaveCount(0);
+    await page.getByRole('button', { name: 'この設定ではじめる', exact: true }).click();
+    await expect(page.getByText('はるさん、こんにちは。', { exact: true })).toBeVisible();
+    await expectLearningNavigation(page);
+    await expect(page.getByRole('button', { name: '今日の学習をはじめる →', exact: true })).toBeVisible();
+  }
 });
 test('1200-word browser searches, filters and pages the curriculum', async ({ page }) => {
   await page.goto('./');
@@ -107,7 +123,7 @@ test('hints and all question formats fit a small phone without scrolling', async
     await answerQuestion(page, i === SESSION_SIZE - 1);
   }
   await answerQuestion(page);
-  await expect(page.getByText('あと一歩。次の20問に挑戦しよう', { exact: true })).toBeVisible();
+  await expect(page.getByText('復習まで、よく取り組んだね！', { exact: true })).toBeVisible();
 });
 
 test('the meaning hint for I does not disclose its answer and hints reset between formats', async ({ page }) => {
@@ -133,14 +149,16 @@ test('the meaning hint for I does not disclose its answer and hints reset betwee
     await answerQuestion(page);
   }
 });
-test('19/20 and correction + review do not grant reward', async ({ page }) => {
+test('19/20 retains the initial score after correction and review', async ({ page }) => {
   await begin(page);
   for (let i=0;i<SESSION_SIZE;i++) await answerQuestion(page,i===SESSION_SIZE - 1);
   await expect(page.getByText('復習タイム · 初回の点数は変わりません', { exact: true })).toBeVisible();
   await answerQuestion(page);
-  await expect(page.getByText('あと一歩。次の20問に挑戦しよう', { exact: true })).toBeVisible();
-  await page.getByRole('button', { name: 'ごほうびを確認', exact: true }).click();
-  await expect(page.getByRole('button', { name: '利用をはじめる', exact: true })).toBeDisabled();
+  await expect(page.getByText('復習まで、よく取り組んだね！', { exact: true })).toBeVisible();
+  await expect(page.getByText(/^19\s*\/\s*20\s*問$/)).toBeVisible();
+  await expectLearningNavigation(page);
+  await page.getByRole('tab', { name: '記録', exact: true }).click();
+  await expect(page.getByText('通常学習　19/20問', { exact: true })).toBeVisible();
 });
 test('five prior mistakes are guaranteed after reload, and reset clears saved history', async ({ page }) => {
   await begin(page);
@@ -165,7 +183,7 @@ test('five prior mistakes are guaranteed after reload, and reset clears saved hi
   expect(reviewed).toHaveLength(5);
   expect(new Set(reviewed).size).toBe(5);
   expect(reviewed.every(id=>missed.includes(id))).toBe(true);
-  await expect(page.getByText('10分のごほうびを獲得！', {exact:true})).toBeVisible();
+  await expect(page.getByText('20問ぜんぶ正解！', {exact:true})).toBeVisible();
   await page.getByRole('tab', {name:'設定',exact:true}).click();
   await page.getByRole('button', {name:'検証データを初期化',exact:true}).click();
   await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || '{"records":[]}').records.length, MISTAKES_STORAGE_KEY)).toBe(0);
